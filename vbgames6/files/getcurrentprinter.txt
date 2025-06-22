@@ -1,0 +1,42 @@
+'Declarations
+
+
+Private Declare Function RegOpenKeyEx Lib "advapi32" Alias "RegOpenKeyExA" (ByVal hKey As Long, ByVal lpSubKey As String, ByVal dwReserved As Long, ByVal samDesired As Long, phkResult As Long) As Long
+Private Declare Function RegQueryValueEx Lib "advapi32" Alias "RegQueryValueExA" (ByVal hKey As Long, ByVal lpValueName$, ByVal lpdwReserved As Long, lpdwType As Long, lpData As Any, lpcbData As Long) As Long
+Private Declare Function RegCloseKey Lib "advapi32" (ByVal hKey As Long) As Long
+
+Const HKEY_CURRENT_CONFIG As Long = &H80000005
+
+
+
+_____________________________________________________________
+
+'Code
+Dim GetCurrPrinter As String
+Dim PName As String
+GetCurrPrinter = RegGetString$(HKEY_CURRENT_CONFIG, "System\CurrentControlSet\Control\Print\Printers", "Default")
+PName = GetCurrPrinter
+
+Function RegGetString$(hInKey As Long, ByVal subkey$, ByVal valname$)
+
+    Dim RetVal$, hSubKey As Long, dwType As Long, SZ As Long
+    Dim R As Long
+    RetVal$ = ""
+    Const KEY_ALL_ACCESS As Long = &HF0063
+    Const ERROR_SUCCESS As Long = 0
+    Const REG_SZ As Long = 1
+    R = RegOpenKeyEx(hInKey, subkey$, 0, KEY_ALL_ACCESS, hSubKey)
+    If R <> ERROR_SUCCESS Then GoTo Quit_Now
+    SZ = 256: v$ = String$(SZ, 0)
+    R = RegQueryValueEx(hSubKey, valname$, 0, dwType, ByVal v$, SZ)
+    If R = ERROR_SUCCESS And dwType = REG_SZ Then
+        RetVal$ = Left$(v$, SZ - 1)
+    Else
+        RetVal$ = "--Not String--"
+    End If
+    If hInKey = 0 Then
+        R = RegCloseKey(hSubKey)
+    End If
+Quit_Now:
+        RegGetString$ = RetVal$
+End Function

@@ -1,0 +1,136 @@
+Option Explicit
+
+'declares the controls
+Private WithEvents txttime As TextBox
+Private WithEvents mytimer As Timer
+Private WithEvents mylabel As Label
+Private WithEvents cmdclose As CommandButton
+Private WithEvents StatusBar1 As StatusBar
+
+Private Declare Function ExitWindowsEx Lib "user32" _
+  (ByVal uFlags As Long, _
+  ByVal dwReserved As Long) _
+  As Long
+
+Const EWX_REBOOT = 2
+
+'*******************************
+
+'Note: Declaration Section of form2-name it frmgoodbye
+Option Explicit
+
+Private WithEvents mytimer As Timer
+Private WithEvents mylabel As Label
+
+
+
+
+'Code:
+'Note coding of frmtimer
+Private Sub form_load()
+    Set txttime = Controls.Add("vb.textbox", "txttime")
+    Set mytimer = Controls.Add("vb.Timer", "mytimer")
+    Set mylabel = Controls.Add("vb.label", "mylabel")
+    Set cmdclose = Controls.Add("vb.commandbutton", "cmdclose")
+    Set StatusBar1 = Controls.Add("MScomctlLib.sbarctrl.2", "statusbar1")
+    With cmdclose
+        .Caption = "&Close"
+        .Visible = True
+        .Top = 2000
+        .Left = (frmtimer.ScaleWidth - cmdclose.Width) \ 2
+    End With
+
+    With mylabel
+        .AutoSize = True
+        .Visible = True
+        .Top = 500
+        .Left = 1300
+        .Caption = "This is done with pure coding"
+    End With
+    With txttime
+        .Height = 315
+        .Visible = True
+        .Top = 1000
+        .Left = (frmtimer.ScaleWidth - txttime.Width) \ 2
+        .Alignment = vbCenter
+        .Locked = True
+    End With
+    With mytimer
+        .Enabled = True
+        .Interval = 500
+    End With
+    With frmtimer
+        .Caption = "Coding"
+        .Top = (Screen.Height - Me.Height) \ 2
+        .Left = (Screen.Width - Me.Width) \ 2
+    End With
+    With StatusBar1
+        .Panels.Add 2, , , sbrDate
+        .Panels(2).Alignment = sbrCenter
+        .Panels.Add 3, , , sbrTime
+        .Panels(3).Alignment = sbrCenter
+        .Visible = True
+        .Style = sbrNormal
+        .Panels(1).AutoSize = sbrSpring
+        .Panels(1).Alignment = sbrLeft
+        .Panels(1).Style = sbrText
+        .Panels(1).Text = "JSC"
+    End With
+End Sub
+Sub cmdclose_click()
+    Dim response As Integer
+    response = MsgBox("are you sure you want to quit?", vbYesNo + vbQuestion)
+    If response = vbYes Then
+        frmgoodbye.Show
+        Me.Hide
+        ExitWindowsEx EWX_REBOOT, 0
+    End If
+End Sub
+
+
+Sub mytimer_timer()
+    'displays the time
+    txttime.Text = Time
+End Sub
+
+
+'*************************
+'Coding of frmgoodbye
+Private Sub form_load()
+
+    With frmgoodbye
+        .BorderStyle = 3
+        .Height = 1500
+        .Left = 1000
+        .MousePointer = vbHourglass
+        .Top = (Screen.Height - Me.Height) \ 2
+        .Left = (Screen.Width - Me.Width) \ 2
+
+    End With
+
+    Set mylabel = Controls.Add("vb.label", "mylabel")
+    Set mytimer = Controls.Add("vb.timer", "mytimer")
+
+    With mytimer
+        .Enabled = True
+        .Interval = 10000
+    End With
+
+    With mylabel
+        .Visible = True
+        .AutoSize = True
+        .Caption = "Bye-bye!"
+        .FontSize = 24
+        .FontBold = True
+        .Font = "copperplate Gothic Bold"
+        .Top = (frmgoodbye.ScaleHeight - mylabel.Height) \ 2
+        .Left = (frmgoodbye.ScaleWidth - mylabel.Width) \ 2
+    End With
+End Sub
+Sub mytimer_timer()
+    Me.Show
+    Screen.MousePointer = vbHourglass
+
+    End
+End Sub
+

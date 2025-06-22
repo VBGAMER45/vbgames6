@@ -1,0 +1,38 @@
+<Page lastSave="1296684036878" lastUpdated="Wed Feb 02 16:00:36 CST 2011" unsaved="false" lastPublish="1296684039069" footerSelection="1" lastMod="1296684033375" dirty="" fileVersion="2">
+  <Element copyrightFooterStyle="Select A Style" uidCounter="15" keyword="Activex" description="Visual Basic Games. Projects. Updated As much as possible! Tons of code examples java visual basic asp and java games and a lot more&#10;C\C++,Assembly, html, windows shortcuts, batch programming, Dhtml, PopupMaker" pageURI="http://vbgames6.homestead.com/Activex.html" onunload="" followedLinkColor="#6633CC" onload="" onPublish="PageElement" backgroundType="bgColor" pagePassword="" width="650" type="Page" passwordProtectedFile="" bgImage="" filename="Activex" imageToolbarOff="true" headTag="" linkColor="#3333CC" bgColor="#000000" bgPattern="" uniqueID="element1" center="false" currentWindow="1" title="Active X Controls">
+<?property ignore-whitespace="false"?><Element bgcolor="" height="51" sizePositionLocked="false" name="Text#1" border-width="0" width="344" type="Text" y="183" x="186" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element2"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="24" font-family="Helvetica" href="" link_target="" underline="false">Active X Controls.</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element textFont="Helvetica" textColor="#FF0033" onPreview="StandardButton" height="58" sizePositionLocked="false" textHeight="12" onPublish="StandardButton" name="Standard Button#1" width="102" type="StandardButton" color="#000000" alt="" bthickness="6" y="451" x="281" textSize="16" link="index.html" buttonLabel="Home" link_target="_self" groupID="" bevel="24" italic="false" bold="true" uniqueID="element3"/>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#2" border-width="0" width="74" type="Text" y="328" x="4" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element4"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Description</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#3" border-width="0" width="74" type="Text" y="402" x="6" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element5"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Url</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="52" sizePositionLocked="false" name="Text#4" border-width="0" width="144" type="Text" y="278" x="3" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element6"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Helvetica" href="" link_target="" underline="false">Submit and Active X Control</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="62" sizePositionLocked="false" name="Text#5" border-width="0" width="239" type="Text" y="241" x="226" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element7"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">VTApi allows to develop IVR</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">systems, answering machines,</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">predictive dialers and more.</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#6" border-width="0" width="74" type="Text" y="321" x="280" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element8"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="http://www.vtapi.com" link_target="_self" underline="false">Download</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element width="220" y="0" type="HTMLSnippet" x="0" cdata="" sizePositionLocked="false" name="Insert HTML#1" height="32" groupID="" uniqueID="element9">
+      <![CDATA[<SCRIPT language=JavaScript 
+src="http://www.homestead.com/visualbasiczone/files/toolbar.js"></SCRIPT>
+
+
+<SCRIPT language=JavaScript 
+src="http://www.homestead.com/visualbasiczone/files/local.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+			drawToolbar();
+		</SCRIPT>
+
+
+<SCRIPT language=JavaScript 
+src="http://www.homestead.com/visualbasiczone/files/global.js"></SCRIPT>
+]]>
+    </Element>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="70" sizePositionLocked="false" name="Text#7" border-width="0" width="444" type="Text" y="6" x="36" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element10"><Paragraph align="center" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="36" font-family="Helvetica" href="" link_target="" underline="false">Visual Basic Zone</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Form height="auto" width="100%" y="0" x="0" resizable="no">
+      <Element appendoptions="appendemail" email="vbbestgame3@hotmail.com" height="25" label="Submit" sizePositionLocked="false" appendboth="E-Mail and Text File" name="Submit Button#1" width="59" type="Forms_SubmitButton" image="" thankYouType="page" buttonType="label" y="486" message="Thank you, your information has been submited. Your control will be posted in 1-3 days." x="0" page="default" appendtextfile="Text File in Form Manager" groupID="" appendemail="My E-Mail Address" uniqueID="element13"/>
+      <Element maxChars="1000" height="24" sizePositionLocked="false" name="One Line Textbox#1" text="" width="161" type="Forms_OneLineText" reqmessage="[Description] is required." y="437" x="0" required="false" groupID="" uniqueID="element14"/>
+      <Element maxChars="1000" height="24" sizePositionLocked="false" name="One Line Textbox#2" text="" width="153" type="Forms_OneLineText" reqmessage="Description is required." y="361" x="0" required="true" groupID="" uniqueID="element15"/>
+    </Form>
+  </Element>
+  <Version>
+    <Current fileVersion="13" site="4437951" user="127711"/>
+    <Initial fileVersion="13" site="4437951" user="127711"/>
+  </Version>
+</Page>

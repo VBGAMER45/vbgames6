@@ -1,0 +1,16 @@
+'Only let a program load 4 times before you have to regester
+
+
+Code:
+
+
+Function register(FRM As Form)
+'Put this code under the load section of a FORM
+retvalue = GetSetting("A", "0", "Runcount")
+GD$ = Val(retvalue) + 1
+SaveSetting "A", "0", "RunCount", GD$
+If GD$ > 3 Then
+MsgBox "HeY!!!, Well it's time for you to register this program for now BYE!!!"
+Unload FRM
+End If
+End Function

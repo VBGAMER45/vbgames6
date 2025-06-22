@@ -1,0 +1,6 @@
+How to open another program from vb!
+
+Call Shell(App.Path & "\file.ini", vbNormalFocus)
+
+
+Jonathan Valentin

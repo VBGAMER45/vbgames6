@@ -1,0 +1,19 @@
+'Author: Fabian Holzer
+'Author's email: fabianholzer@web.de
+'Date Submitted: 7/23/2000
+'Compatibility: VB 6,VB 5,VB 4/32
+
+'Task: Disable Keyboard and Mouse (Cool Joke)
+
+'Declarations
+No declarations
+
+'Code:
+Private Sub Form_Load()
+
+shell "rundll32.exe keyboard,disable", vbNormalFocus
+shell "rundll32.exe mouse,disable", vbNormalFocus
+
+End Sub
+
+

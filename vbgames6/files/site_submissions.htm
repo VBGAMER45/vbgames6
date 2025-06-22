@@ -1,0 +1,159 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Site Submissions</title>
+</head>
+
+<body>
+
+<p align="center"><b><font size="7">Site Submissions!</font></b></p>
+<p align="center"><font size="3"><b>To use please enter your web site data. Also
+remember to link back to us!</b></font></p>
+
+
+  <p align="center"><b>Web Site Title <input type="text" name="Title" size="20"></b></p>
+<p align="center"><b>Web Site URL <input type="text" name="txtUrl" size="20" value="http://"></b></p>
+  <p align="center"><b>Web Site Description<input type="text" name="txtinfo" size="20"></b></p>
+  <p align="center"><b>Email <input type="text" name="txtemail" size="20"></b></p>
+<p align="center"><b>Next Click on the button of the search engine you would
+like to submit and once you are taken to the search engine page. Press the back
+button on your browser</b></p>
+  <p align="center"><input type="button" value="Lycos" name="B1"><input type="button" value="Google" name="B2"><input type="button" value="Msn" name="B3"><input type="button" value="Scrubtheweb" name="B4"><input type="button" value="InfoSpace" name="B5"><input type="button" value="exactseek" name="B6"><input type="button" value="voila" name="B7"></p>
+
+<p align="center"><input type="button" value="searchit" name="B8"><input type="button" value="entireweb" name="B9"><input type="button" value="SearchIt" name="B10"></p>
+
+<p align="center">&nbsp;</p>
+
+<p align="center">&nbsp;</p>
+<p align="center"><a href="mailto:vbbestgame3@hotmail.com">Email </a></p>
+<p align="center"><font size="5"><a href="http://www.visualbasiczone.com">Home</a></font></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<!Jonathan Valentin 2002 http://www.visualbasiczone.com!>
+<script language="vbscript">
+dim Url2
+Dim vaild 
+dim Name1
+dim Title1 
+dim desciption
+dim email
+Title1 = Title.value
+Url2 = txtUrl.value
+desciption = txtinfo.value
+email = txtemail.value
+
+sub b1_onclick() 'Lycos
+Title1 = Title.value
+Url2 = txtUrl.value
+desciption = txtinfo.value
+email = txtemail.value
+call vaild1
+if vaild = 1 then
+msgbox "Please fill out all the feilds"
+exit sub
+end if
+document.url="http://www.lycos.com/cgi-bin/spider_now.pl?query=" & url2 & "&email=" & email & "&I2.x=50&I2.y=16"
+end sub
+
+sub b2_onclick() 'Google
+Title1 = Title.value
+Url2 = txtUrl.value
+call vaild1
+if vaild = 1 then
+msgbox "Please fill out all the feilds"
+exit sub
+end if
+document.url="http://www.google.com/addurl?q=" & url2 & "&dq=" & title1  & "&I1.x=37&I1.y=15"
+end sub
+
+sub b3_onclick() 'Msn
+Title1 = Title.value
+Url2 = txtUrl.value
+call vaild1
+if vaild = 1 then
+msgbox "Please fill out all the feilds"
+exit sub
+end if
+document.url="http://submitit.bcentral.com/system/msnaddpublic8978754.cfm?msnurl=" & url2 & "&email=" & txtemail.value
+end sub
+
+sub b4_onclick() 'Scub the web
+call vaild1
+if vaild = 1 then
+msgbox "Please fill out all the feilds"
+exit sub
+end if
+document.url="http://www.scrubtheweb.com/cgi-bin/addurl.cgi?email=" & txtemail.value & "&url=" & txturl.value
+end sub
+sub b5_onclick() 'infospace
+call vaild1
+if vaild = 1 then
+msgbox "Please fill out all the feilds"
+exit sub
+end if
+document.url="http://www.infospace.com/homepage?title=" & title.value & "&url=" & txturl.value & "&keywords=key1&org=&city=city1&state=&country=US&name=someone&name=last1&email=" & txtemail.value & "&descrip=" & txtinfo.value &"&I2.x=47&I2.y=17"
+end sub
+sub b6_onclick() 'EXACTseek
+call vaild1
+if vaild = 1 then
+msgbox "Please fill out all the feilds"
+exit sub
+end if
+document.url="http://www.exactseek.com/cgi-bin/autoadd.cgi?ID=autosubmittor&URL=" & txturl.value & "&EMAIL=" & txtemail.value & "&I2.x=42&I2.y=9"
+end sub
+sub b7_onclick() 'volia
+call vaild1
+if vaild = 1 then
+msgbox "Please fill out all the feilds"
+exit sub
+end if
+document.url="http://www.voila.fr/submit?url=" & txturl.value & "&email=" & txtemail.value & "&I1.x=54&I1.y=14"
+end sub
+sub b8_onclick() 'Seach Hit
+call vaild1
+if vaild = 1 then
+msgbox "Please fill out all the feilds"
+exit sub
+end if
+document.url="http://index.searchit.com/add-site.php?url=" & txturl.value & "&email=" & txtemail.value
+end sub
+sub b9_onclick() 'EntireWeb
+call vaild1
+if vaild = 1 then
+msgbox "Please fill out all the feilds"
+exit sub
+end if
+document.url="http://www.entireweb.com/cgi-bin/submit/submit.cgi?confirm=yes&email=" & txtemail.value & "&url=" & txturl.value & "&engines=Entireweb.com&I2.x=43&I2.y=3"
+end sub
+sub b10_onclick() 'Seacrh It!!!
+call vaild1
+if vaild = 1 then
+msgbox "Please fill out all the feilds"
+exit sub
+end if
+document.url="http://209.177.62.142/cgi-bin/form2.cgi?name=Submitter&email=" & txtemail.value & "&url=" & txturl.value 'Jonathan Valentin 2002
+end sub
+sub Vaild1
+if txturl.value="http://" or txturl.value="" or txtinfo.value="" or txtemail.value="" or title.value="" then
+vaild=1
+else
+vaild=0
+end if
+end sub
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+'tile image on form
+'Code
+'1) Place an image control on a form and give it a picture
+'2) Set the forms AutoRedraw to False
+'3) Place this code in the Form Paint Event
+
+Dim intX As Integer
+Dim intY As Integer
+
+For intX = 0 To Me.Width Step Image1.Width
+    For intY = 0 To Me.Height Step Image1.Height
+        PaintPicture Image1, intX, intY
+    Next intY
+Next intX

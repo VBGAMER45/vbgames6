@@ -1,0 +1,9 @@
+'Declarations
+Declare Function GetTickCount& Lib "kernel32" ()
+
+'+_________________________________________
+
+'Code
+Dim lngReturn As Long
+lngReturn = GetTickCount()
+MsgBox ("Windows has been running for " & (lngReturn / 1000) & " seconds.")

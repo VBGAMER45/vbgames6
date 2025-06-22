@@ -1,0 +1,10 @@
+Author: Abstractvb
+Date: 3/18/2000 10:42:41 AM
+ID: 51
+
+
+By doing this you can print any web page directly from the internet without having it saved as an Internet Shortcut.
+
+Just change the URL in the example below. (Unless you really want to print this site!)
+Shell "rundll32.exe C:\WINDOWS\SYSTEM\MSHTML.DLL,PrintHTML " & _
+      "http://members.home.com/abstractvb/index.htm", vbNormalFocus

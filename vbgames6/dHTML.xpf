@@ -1,0 +1,32 @@
+<Page lastSave="1296684301502" lastUpdated="Wed Feb 02 16:05:01 CST 2011" unsaved="false" lastPublish="1296684304538" footerSelection="1" lastMod="1296684299063" dirty="" fileVersion="2">
+  <Element copyrightFooterStyle="Select A Style" uidCounter="10" keyword="Dhtml" description="Dhtml, Visual Basic Code, Games. Projects. Updated As much as possible! Tons of code examples java visual basic asp and java games and a lot more&#10;C\C++,Assembly, html, windows shortcuts, batch programming, Dhtml, PopupMaker" pageURI="http://vbgames6.homestead.com/dHTML.html" onunload="" followedLinkColor="#6633CC" onload="" onPublish="PageElement" backgroundType="bgColor" pagePassword="" width="650" type="Page" passwordProtectedFile="" bgImage="" filename="dHTML" imageToolbarOff="true" headTag="" linkColor="#3333CC" bgColor="#000000" bgPattern="" uniqueID="element1" center="false" currentWindow="1" title="Dhtml Games">
+<?property ignore-whitespace="false"?><Element bgcolor="" height="51" sizePositionLocked="false" name="Text#1" border-width="0" width="344" type="Text" y="140" x="183" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element2"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="24" font-family="Helvetica" href="" link_target="" underline="false">Dhtml Games</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element textFont="Helvetica" textColor="#FF0033" onPreview="StandardButton" height="35" sizePositionLocked="false" textHeight="12" onPublish="StandardButton" name="Standard Button#1" width="92" type="StandardButton" color="#000000" alt="" bthickness="4" y="520" x="259" textSize="16" link="index.html" buttonLabel="Home" link_target="_self" groupID="" bevel="24" italic="false" bold="true" uniqueID="element3"/>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#2" border-width="0" width="344" type="Text" y="181" x="214" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element4"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Snake Play it&#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="http://www.dynamicdrive.com/dynamicindex12/snake/index.htm#" link_target="_self" underline="false">here</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="113" sizePositionLocked="false" name="Text#3" border-width="0" width="344" type="Text" y="229" x="179" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element5"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Helvetica" href="" link_target="" underline="false">Phong</Segment><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;is an incredible ping-pong game with an even more impressive AI (artificial intelligence). Play against the computer, and see if you can win (take it for us, it's possible). We encourage DHTML programmers to check the source to see how Michael managed this impressive DHTML feat...&#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="http://www.dynamicdrive.com/dynamicindex12/pong/pong.htm" link_target="_self" underline="false">here</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#4" border-width="0" width="344" type="Text" y="366" x="238" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element6"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Tetris&#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="http://www.dynamicdrive.com/dynamicindex12/tetris/tetris.htm" link_target="_self" underline="false">here</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#5" border-width="0" width="344" type="Text" y="421" x="214" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element7"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Another Tetris Game&#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="http://www.dynamicdrive.com/dynamicindex12/tet2.htm" link_target="_self" underline="false">here</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element width="220" y="6" type="HTMLSnippet" x="0" cdata="" sizePositionLocked="false" name="Insert HTML#1" height="32" groupID="" uniqueID="element8">
+      <![CDATA[<SCRIPT language=JavaScript 
+src="http://www.homestead.com/visualbasiczone/files/toolbar.js"></SCRIPT>
+
+
+<SCRIPT language=JavaScript 
+src="http://www.homestead.com/visualbasiczone/files/local.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+			drawToolbar();
+		</SCRIPT>
+
+
+<SCRIPT language=JavaScript 
+src="http://www.homestead.com/visualbasiczone/files/global.js"></SCRIPT>
+]]>
+    </Element>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="71" sizePositionLocked="false" name="Text#6" border-width="0" width="444" type="Text" y="6" x="17" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element9"><Paragraph align="center" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="36" font-family="Helvetica" href="" link_target="" underline="false">Visual Basic Zone</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+  </Element>
+  <Version>
+    <Current fileVersion="13" site="4437951" user="127711"/>
+    <Initial fileVersion="13" site="4437951" user="127711"/>
+  </Version>
+</Page>

@@ -1,0 +1,182 @@
+<Page lastSave="1296684981929" lastUpdated="Wed Feb 02 16:16:21 CST 2011" unsaved="false" lastPublish="1296684987457" footerSelection="1" lastMod="1296684979711" dirty="" fileVersion="2">
+  <Element copyrightFooterStyle="Select A Style" uidCounter="40" keyword="" description="" pageURI="http://vbgames6.homestead.com/links.html" onunload="" followedLinkColor="#6633CC" onload="" onPublish="PageElement" backgroundType="bgColor" pagePassword="" width="650" type="Page" passwordProtectedFile="" bgImage="" filename="links" imageToolbarOff="true" headTag="" linkColor="#4DE605" bgColor="#000000" bgPattern="" uniqueID="element1" center="false" currentWindow="1" title="Links!">
+<?property ignore-whitespace="false"?><Element bgcolor="" height="70" sizePositionLocked="false" name="text#1" border-width="0" width="344" type="Text" y="164" x="246" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element2"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="36" font-family="Helvetica" href="" link_target="" underline="false">LINKS</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="63" sizePositionLocked="false" name="text#2" border-width="0" width="344" type="Text" y="229" x="179" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element3"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">We only have&#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Helvetica" href="" link_target="" underline="false">25</Segment><Segment font-style="bold" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;links at this time. If you want to include yours click on the add link button and they will be posted shortly</Segment><Segment font-style="plain" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">!.</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element textFont="Helvetica" textColor="#FF0033" onPreview="StandardButton" height="33" sizePositionLocked="false" textHeight="12" onPublish="StandardButton" name="standard button#1" width="102" type="StandardButton" color="#000000" alt="" bthickness="3" y="1816" x="369" textSize="16" link="index.html" buttonLabel="Home" link_target="_self" groupID="" bevel="24" italic="false" bold="true" uniqueID="element4"/>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#1" border-width="0" width="458" type="Text" y="1330" x="141" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element5"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://www.geocities.com/vbgamer46/index.html" link_target="_blank" underline="false">The VB Code Center&#160;</Segment><Segment font-style="plain" color="#660066" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">- a newer site which has some good code examples.</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="29" sizePositionLocked="false" name="Text#3" border-width="0" width="458" type="Text" y="1411" x="149" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element6"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://www.geocities.com/thezelda64site/index.html" link_target="_blank" underline="false">The Zelda64Site&#160;</Segment><Segment font-style="plain" color="#660066" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">- a Zelda 64 Odd picture site.</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="44" sizePositionLocked="false" name="Text#4" border-width="0" width="458" type="Text" y="1360" x="146" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element7"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://abstractvb.com/" link_target="_blank" underline="false">Abstract VB</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;- this is a very good place where you can find tons of helpful vbcode.</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element textFont="Helvetica" textColor="#FF0033" onPreview="StandardButton" height="35" sizePositionLocked="false" textHeight="12" onPublish="StandardButton" name="Standard Button#1" width="178" type="StandardButton" color="#000000" alt="" bthickness="4" y="298" x="233" textSize="16" link="http://www.visualbasiczone.com/links/add.php" buttonLabel="Add your link!" link_target="_self" groupID="" bevel="24" italic="false" bold="true" uniqueID="element8"/>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#5" border-width="0" width="458" type="Text" y="1293" x="141" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element9"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://www.freevbcode.com" link_target="_blank" underline="false">FreeVbCode.com</Segment><Segment font-style="plain" color="#660066" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">- a good site with lots of free Vb code!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#6" border-width="0" width="487" type="Text" y="1260" x="142" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element10"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://www.visualstatement.com/vb" link_target="_blank" underline="false">Gelowitz Visual Basic Code Source&#160;</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">- A vast, and growing, collection of source code</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#7" border-width="0" width="458" type="Text" y="1227" x="144" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element11"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://www.programmersheaven.com" link_target="_blank" underline="false">Programmers Heaven</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">- a very good site with lots of code examples</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element width="149" y="218" type="HTMLSnippet" x="0" cdata="" sizePositionLocked="false" name="Insert HTML#1" height="49" groupID="" uniqueID="element12">
+      <![CDATA[<!--- Begin ProgrammingLinks(Small) Code --->
+<center><a href="http://programminglinks.cjb.net" target="_top">
+<img border=0 alt="Programming Links" src="http://programminglinks.hypermart.net/images/link/small.gif" ></a>
+<!--- End ProgrammingLinks(Small) Code--->
+]]>
+    </Element>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#11" border-width="0" width="458" type="Text" y="1188" x="140" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element13"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://vbprogzone.cjb.net" link_target="_blank" underline="false">Visual Basic Programing Zone!</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;- a good site with code examples!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#12" border-width="0" width="458" type="Text" y="1050" x="153" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element14"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://www.vbwire.com" link_target="_self" underline="false">VB Wire</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;- a &#160;very good site with tons of links and a lot more!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#13" border-width="0" width="458" type="Text" y="1119" x="147" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element15"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://www.vbchat.com" link_target="_self" underline="false">VB Chat</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;- this is the place were I got the chatroom!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="29" sizePositionLocked="false" name="Text#15" border-width="0" width="458" type="Text" y="965" x="147" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element16"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://www.revolution3d.de" link_target="_self" underline="false">Revolution 3d</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;- A site with a very neat 3d engine samples!!!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="30" sizePositionLocked="false" name="Text#16" border-width="0" width="458" type="Text" y="920" x="147" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element17"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="http://www.angelfire.com/ny3/visualbasic/" link_target="_self" underline="false">Theo's Site</Segment><Segment font-style="plain" color="#A9FF56" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;- A nice page with lots of tips for vb starters!!!!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="52" sizePositionLocked="false" name="Text#17" border-width="0" width="603" type="Text" y="1876" x="3" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element18"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="" link_target="" underline="false">Navagation Bar:&#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="code.html" link_target="_self" underline="false">Vb Code&#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="" link_target="" underline="false">&#160;&#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="game.html" link_target="_self" underline="false">Vb Games</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="" link_target="" underline="false">&#160; &#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="links.html" link_target="_self" underline="false">Links</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="" link_target="" underline="false">&#160; &#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="java.html" link_target="_self" underline="false">Java Games</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="" link_target="" underline="false">&#160;&#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="http://www.homestead.com/visualbasiczone/java.html" link_target="_self" underline="false">Java Script</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="" link_target="" underline="false">&#160; &#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="http://www.angelfire.com/games2/vbgame/visual.htm" link_target="_self" underline="false">Active X Site</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="" link_target="" underline="false">&#160; &#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="http://www.homestead.com/visualbasiczone/gifs.html" link_target="_self" underline="false">Gifs</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="" link_target="" underline="false">&#160; &#160; &#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="http://www.geocities.com/vbgamer46/art.html" link_target="_self" underline="false">Art &#160;Files</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="" link_target="" underline="false">&#160; &#160;</Segment><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Times New Roman" href="files/cheats.htm" link_target="_self" underline="false">Cheats</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="33" sizePositionLocked="false" name="Text#20" border-width="0" width="344" type="Text" y="1485" x="303" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element19"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="12" font-family="Helvetica" href="" link_target="" underline="false">Add a Site!!!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="29" sizePositionLocked="false" name="Text#21" border-width="0" width="139" type="Text" y="1539" x="162" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element20"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Your Name</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="29" sizePositionLocked="false" name="Text#22" border-width="0" width="139" type="Text" y="1571" x="173" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element21"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Email</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="29" sizePositionLocked="false" name="Text#23" border-width="0" width="139" type="Text" y="1620" x="162" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element22"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Site Name</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="29" sizePositionLocked="false" name="Text#24" border-width="0" width="139" type="Text" y="1660" x="165" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element23"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Site Url</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="29" sizePositionLocked="false" name="Text#25" border-width="0" width="139" type="Text" y="1709" x="156" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element24"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Site Description</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="62" sizePositionLocked="false" name="Text#28" border-width="0" width="345" type="Text" y="749" x="149" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element25"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="http://www.JustVBJobs.com" link_target="_blank" underline="false">JustVBJobs.com</Segment><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;- A jobsite and community for</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">VB professionals</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false"></Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="46" sizePositionLocked="false" name="Text#26" border-width="0" width="344" type="Text" y="647" x="151" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element26"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="http://www.VBgames.co.uk" link_target="_blank" underline="false">Visual Basic Games</Segment><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;- lots of cool games withsource code and directxtutorials</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="94" sizePositionLocked="false" name="Text#29" border-width="0" width="344" type="Text" y="815" x="145" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element27"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="http://www.andreavb.f2s.com" link_target="_blank" underline="false">Andrea VB Programming and Free Downloads</Segment><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">-Here's the code you'relooking for! Tips andTricks, Source Code,</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Printing and ProgrammingTechniques, Advanced APIProgramming, NewsGroup and</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Free Downloads for VisualBasic!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element width="388" y="0" type="HTMLSnippet" x="153" cdata="" sizePositionLocked="false" name="Insert HTML#3" height="30" groupID="" uniqueID="element28">
+      <![CDATA[
+<script type="text/javascript" language="JavaScript" src= 
+"http://www.vbgames6.homestead.com/files/navcond.js">
+</script>
+
+<script type="text/javascript" language="JavaScript">
+
+/*
+Top Navigational Bar II (By Mike Hall @ Brainjar.com)
+Last updated: 00/05/08
+Permission granted and modified by Dynamicdrive.com to include script in archive
+For this and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+var myNavBar1 = new NavBar(0);
+var dhtmlMenu;
+
+//define menu items (first parameter of NavBarMenu specifies main category width, second specifies sub category width in pixels)
+//add more menus simply by adding more "blocks" of same code below
+
+
+dhtmlMenu = new NavBarMenu(100, 0);
+dhtmlMenu.addItem(new NavBarMenuItem("Home", "http://www.vbgames6.homestead.com"));
+dhtmlMenu.addItem(new NavBarMenuItem("Comments", "http://www.geocities.com/vbgamer46/comments.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Awards", "http://www.vbgames6.homestead.com/files/october.gif"));
+dhtmlMenu.addItem(new NavBarMenuItem("Link To Us", "http://www.visualbasiczone.homestead.com/linkus.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("About Us", "http://www.visualbasiczone.homestead.com/about.html"));
+myNavBar1.addMenu(dhtmlMenu);
+
+dhtmlMenu = new NavBarMenu(100, 120);
+dhtmlMenu.addItem(new NavBarMenuItem("Code!", ""));
+dhtmlMenu.addItem(new NavBarMenuItem("VB Code", "http://www.vbgames6.homestead.com/code.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Java Script", "http://www.visualbasiczone.homestead.com/java1.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Java", "http://www.visualbasiczone.homestead.com/javacode.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Asp", "http://www.visualbasiczone.homestead.com/asp.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("C/C++", "http://www.visualbasiczone.homestead.com/c.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Cgi", "http://www.visualbasiczone.homestead.com/cgi.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("QBasic", "http://www.visualbasiczone.homestead.com/Qbasic.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Delphi", "http://www.visualbasiczone.homestead.com/delphi.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Perl", "http://www.visualbasiczone.homestead.com/perl.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Xml", "http://www.visualbasiczone.homestead.com/xml.html"));
+myNavBar1.addMenu(dhtmlMenu);
+
+dhtmlMenu = new NavBarMenu(110, 120);
+dhtmlMenu.addItem(new NavBarMenuItem("MessageBoards", ""));
+dhtmlMenu.addItem(new NavBarMenuItem("Visual Basic", "http://visualbasiczone.community.everyone.net"));
+dhtmlMenu.addItem(new NavBarMenuItem("Java Script", "http://www.coolboard.com/boardshow.cfm/mb=11783847158967"));
+dhtmlMenu.addItem(new NavBarMenuItem("Java", "http://www.coolboard.com/boardshow.cfm?mb=69180519899351"));
+dhtmlMenu.addItem(new NavBarMenuItem("C/C++", "http://www.coolboard.com/boardshow.cfm?mb=11684435521529"));
+dhtmlMenu.addItem(new NavBarMenuItem("Asp", "http://www.coolboard.com/boardshow.cfm?mb=78259010727230"));
+dhtmlMenu.addItem(new NavBarMenuItem("Delphi", "http://www.coolboard.com/boardshow.cfm?mb=45478050502309"));
+dhtmlMenu.addItem(new NavBarMenuItem("QBasic", "http://www.coolboard.com/boardshow.cfm?mb=10037168209523"));
+dhtmlMenu.addItem(new NavBarMenuItem("XML", "http://www.coolboard.com/boardshow.cfm?mb=98142190235294"));
+myNavBar1.addMenu(dhtmlMenu);
+
+dhtmlMenu = new NavBarMenu(100, 150);
+dhtmlMenu.addItem(new NavBarMenuItem("Links", ""));
+dhtmlMenu.addItem(new NavBarMenuItem("Visual Basic", "http://www.vbgames6.homestead.com/links.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Java Script", "http://www.vbgames6.homestead.com/untitled2.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Java", "http://www.vbgames6.homestead.com/untitled2.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Asp", "http://www.vbgames6.homestead.com/untitled2.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("C/C++", "http://www.vbgames6.homestead.com/untitled2.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Delphi", "http://www.vbgames6.homestead.com/untitled2.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("QBasic", "http://www.vbgames6.homestead.com/untitled2.html"));
+myNavBar1.addMenu(dhtmlMenu);
+
+dhtmlMenu = new NavBarMenu(100, 150);
+dhtmlMenu.addItem(new NavBarMenuItem("News", ""));
+dhtmlMenu.addItem(new NavBarMenuItem("VB Gaming", "http://www.vbgaming.com"));
+dhtmlMenu.addItem(new NavBarMenuItem("Tech News", "http://www.vbgames6.homestead.com/files/news.htm"));
+dhtmlMenu.addItem(new NavBarMenuItem("Site News", "http://www.visualbasiczone.com"));
+myNavBar1.addMenu(dhtmlMenu);
+
+dhtmlMenu = new NavBarMenu(100, 150);
+dhtmlMenu.addItem(new NavBarMenuItem("Other", ""));
+dhtmlMenu.addItem(new NavBarMenuItem("Visual Basic Jobs", "http://www.justvbjobs.com"));
+dhtmlMenu.addItem(new NavBarMenuItem("Java Games", "http://www.vbgames6.homestead.com/java.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Cheats", "http://www.vbgames6.homestead.com/files/cheats.htm"));
+dhtmlMenu.addItem(new NavBarMenuItem("Art Files", "http://www.geocities.com/vbgamer46/art.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Project X", "http://www.rpgprojects.homestead.com"));
+dhtmlMenu.addItem(new NavBarMenuItem("Gifs", "http://www.visualbasizone.homestead.com/gifs.html"));
+dhtmlMenu.addItem(new NavBarMenuItem("Submit Code", "http://www.geocities.com/vbgamer46/submit.html"));
+myNavBar1.addMenu(dhtmlMenu);
+
+dhtmlMenu = new NavBarMenu(100, 150);
+dhtmlMenu.addItem(new NavBarMenuItem("Search", ""));
+dhtmlMenu.addItem(new NavBarMenuItem("Yahoo", "http://www.yahoo.com"));
+dhtmlMenu.addItem(new NavBarMenuItem("Alta Vista", "http://www.altavista.com"));
+dhtmlMenu.addItem(new NavBarMenuItem("Infoseek", "http://www.infoseek.com"));
+dhtmlMenu.addItem(new NavBarMenuItem("Excite", "http://www.excite.com"));
+dhtmlMenu.addItem(new NavBarMenuItem("Google", "http://www.google.com"));
+dhtmlMenu.addItem(new NavBarMenuItem("HotBot", "http://www.hotbot.com"));
+myNavBar1.addMenu(dhtmlMenu);
+
+//set menu colors
+myNavBar1.setColors("#000080", "#000000", "#DDEEFF", "#ffffff", "#006799", "#ffffff", "#008B8B", "#ffffff", "#000080")
+
+//uncomment below line to center the menu (valid values are "left", "center", and "right"
+//myNavBar1.setAlign("center")
+
+var fullWidth;
+
+function init() {
+
+  // Get width of window, need to account for scrollbar width in Netscape.
+
+  fullWidth = getWindowWidth() 
+    - (isMinNS4 && getWindowHeight() < getPageHeight() ? 16 : 0);
+
+  myNavBar1.resize(fullWidth);
+  myNavBar1.create();
+  myNavBar1.setzIndex(2);
+}
+</script>
+
+
+<script type="text/javascript" language="JavaScript">
+
+
+window.onload=onloevha;
+
+function onloevha(){;
+if (document.all || document.layers)
+
+init();
+}
+
+</script>]]>
+    </Element>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="62" sizePositionLocked="false" name="Text#31" border-width="0" width="344" type="Text" y="583" x="152" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element29"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="http://www.LinkmeUP.co.uk" link_target="_self" underline="false">LinkmeUP.co.uk</Segment><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;- Visual links to sites of</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">Quality,New Category added</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">for Visual Basic.</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="62" sizePositionLocked="false" name="Text#32" border-width="0" width="432" type="Text" y="448" x="146" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element30"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="http://visualbasic.ittoolbox.com/" link_target="_self" underline="false">ITtoolbox Portal for Visual Basic</Segment><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">&#160;- Content, community, and service for Visual Basic professionals. Providingtechnical discussion, job</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">postings, an integrateddirectory, news, and much more.</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="46" sizePositionLocked="false" name="Text#33" border-width="0" width="432" type="Text" y="521" x="152" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element31"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="http://go.to/adbsoftware" link_target="_self" underline="false">ADB Software&#160;</Segment><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">- A site featuring all the</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#4DE605" font-size="10" font-family="Helvetica" href="" link_target="" underline="false">software made by me using VB</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Form height="auto" width="100%" y="0" x="0" resizable="no">
+      <Element appendoptions="appendemail" email="vbbestgame3@hotmail.com" height="25" label="Submit" sizePositionLocked="false" appendboth="E-Mail and Text File" name="Submit Button#1" width="59" type="Forms_SubmitButton" image="" thankYouType="page" buttonType="label" y="1754" message="Thank you, your information has been submitted." x="334" page="default" appendtextfile="Text File in Form Manager" groupID="" appendemail="My E-Mail Address" uniqueID="element34"/>
+      <Element maxChars="1000" height="24" sizePositionLocked="false" name="sitename" text="" width="257" type="Forms_OneLineText" reqmessage="[Description] is required." y="1614" x="278" required="false" groupID="" uniqueID="element35"/>
+      <Element maxChars="1000" height="24" sizePositionLocked="false" name="name" text="" width="257" type="Forms_OneLineText" reqmessage="[Description] is required." y="1531" x="280" required="false" groupID="" uniqueID="element36"/>
+      <Element maxChars="1000" height="24" sizePositionLocked="false" name="email" text="" width="257" type="Forms_OneLineText" reqmessage="[Description] is required." y="1570" x="277" required="false" groupID="" uniqueID="element37"/>
+      <Element maxChars="1000" height="24" sizePositionLocked="false" name="url" text="" width="257" type="Forms_OneLineText" reqmessage="[Description] is required." y="1654" x="280" required="false" groupID="" uniqueID="element38"/>
+      <Element height="48" sizePositionLocked="false" name="site description" width="256" type="Forms_MultiLineText" reqmessage="[Description] is required." y="1692" x="279" required="false" groupID="" uniqueID="element39"/>
+      <Element text="Reset" width="53" y="1753" type="Forms_ResetButton" x="429" sizePositionLocked="false" height="25" name="Reset Button#1" groupID="" uniqueID="element40"/>
+    </Form>
+  </Element>
+  <Version>
+    <Current fileVersion="13" site="4437951" user="127711"/>
+    <Initial fileVersion="13" site="4437951" user="127711"/>
+  </Version>
+</Page>

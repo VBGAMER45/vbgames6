@@ -1,0 +1,52 @@
+Author: Abstractvb
+Date: 6/14/2000 5:44:35 PM
+ID: 140
+Requires Internet Explorer
+
+Uses the SendMessageTimeout API to determine if a program has stopped responding to user input.
+
+The example opens a copy of Internet Explorer then grabs the handle to check if the program is running. If you do not have IE then simply create an object of something else such as an Instance or Word, or Excel. 
+
+Place this code on a form and add a Command button to the form called Command1. Run the program and click on the Command Button. Internet Explorer should open and a msgbox should open (you may have to click on the form to set focus to that window so you can see the msgbox.) letting you know if the process is responding or not. 
+
+   Const SMTO_BLOCK = &H1
+   Const SMTO_ABORTIFHUNG = &H2
+   Const WM_NULL = &H0
+  
+   Private Declare Function SendMessageTimeout _
+      Lib "user32" Alias "SendMessageTimeoutA" _
+      (ByVal hwnd As Long, _
+      ByVal msg As Long, _
+      ByVal wParam As Long, _
+      ByVal lParam As Long, _
+      ByVal fuFlags As Long, _
+      ByVal uTimeout As Long, _
+      lpdwResult As Long) As Long
+ 
+   Private objIE As Object
+   Private lngIEHandle As Long
+ 
+   Private Sub Command1_Click()
+       Dim lngResult As Long
+       Dim lngRetVal As Long
+       
+       Set objIE = CreateObject("InternetExplorer.Application")
+       
+       objIE.Visible = True
+       objIE.Navigate2 "http://excite.com/"
+             
+       DoEvents
+       
+       lngIEHandle = objIE.hwnd
+   
+       lngRetVal = SendMessageTimeout(lngIEHandle, WM_NULL, 0&, _
+         0&, SMTO_ABORTIFHUNG And SMTO_BLOCK, 1000, lngResult)
+         
+       If lngRetVal Then
+           Debug.Print "Responding"
+       Else
+           Debug.Print "Not Responding"
+       End If
+   End Sub
+
+

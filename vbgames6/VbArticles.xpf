@@ -1,0 +1,187 @@
+<Page lastSave="1296685169037" lastUpdated="Wed Feb 02 16:19:29 CST 2011" unsaved="false" lastPublish="1296685175516" footerSelection="1" lastMod="1296685165040" dirty="" fileVersion="2">
+  <Element copyrightFooterStyle="Select A Style" uidCounter="9" keyword="" description="" pageURI="http://vbgames6.homestead.com/VbArticles.html" onunload="" followedLinkColor="#6633CC" onload="" onPublish="PageElement" backgroundType="bgColor" pagePassword="" width="650" type="Page" passwordProtectedFile="" bgImage="" filename="VbArticles" imageToolbarOff="true" headTag="" linkColor="#3333CC" bgColor="#000000" bgPattern="" uniqueID="element1" center="false" currentWindow="1" title="VbArticles">
+    <Element width="220" y="6" type="HTMLSnippet" x="0" cdata="" sizePositionLocked="false" name="Insert HTML#1" height="32" groupID="" uniqueID="element2">
+      <![CDATA[<SCRIPT language=JavaScript 
+src="http://www.homestead.com/visualbasiczone/files/toolbar.js"></SCRIPT>
+
+
+<SCRIPT language=JavaScript 
+src="http://www.homestead.com/visualbasiczone/files/local.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+			drawToolbar();
+		</SCRIPT>
+
+
+<SCRIPT language=JavaScript 
+src="http://www.homestead.com/visualbasiczone/files/global.js"></SCRIPT>
+]]>
+    </Element>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="71" sizePositionLocked="false" name="Text#1" border-width="0" width="444" type="Text" y="6" x="17" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element3"><Paragraph align="center" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="36" font-family="Helvetica" href="" link_target="" underline="false">Visual Basic Zone</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element width="219" y="0" type="HTMLSnippet" x="232" cdata="" sizePositionLocked="false" name="Insert HTML#2" height="21" groupID="" uniqueID="element4">
+      <![CDATA[<style>
+BODY{
+scrollbar-arrow-color: #0080FF;
+scrollbar-3dlight-color: #000000;
+scrollbar-highlight-color: #FF0000;
+scrollbar-face-color: #000000;
+scrollbar-shadow-color: #FF0000;
+scrollbar-darkshadow-color: #000000;
+scrollbar-track-color: #000000;
+}
+</style>
+]]>
+    </Element>
+    <Element textFont="Helvetica" textColor="#FF0033" onPreview="StandardButton" height="50" sizePositionLocked="false" textHeight="12" onPublish="StandardButton" name="Standard Button#1" width="140" type="StandardButton" color="#000000" alt="" bthickness="3" y="3143" x="260" textSize="16" link="http://www.visualbasiczone.com" buttonLabel="Home" link_target="_self" groupID="" bevel="24" italic="false" bold="true" uniqueID="element5"/>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="43" sizePositionLocked="false" name="Text#2" border-width="0" width="344" type="Text" y="203" x="161" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element6"><Paragraph align="center" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="18" font-family="Helvetica" href="" link_target="" underline="false">Linked Visual Basic Articles</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element width="348" y="239" type="HTMLSnippet" x="198" cdata="" sizePositionLocked="false" name="Insert HTML#3" height="396" groupID="" uniqueID="element7">
+      <![CDATA[<font color="#FF0000">
+ <B>Windows API</b> (<a href="http://www.rookscape.com/vbgaming/frogger.zip">API Frogger Source</a>, By <a href="mailto:martware@austarnet.com.au" target="_top">Martin Stradling</a>)<p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutA.php">What is the Windows API?</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutB.php">Playing Wave Files</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutC.php">High Resolution Timing</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutD.php">Hiding/Displaying the Mouse Cursor</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutO.php">Finding the Cursor Position</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutQ.php">Creating Shortcuts in Windows</a> - By Jennifer Miller<br>
+- <a href="http://www.rookscape.com/vbgaming/GBeebe/bitblt.php">BitBlt Tutorial</a> - By <a href="http://www.gbeebe.cjb.net/" target="_top">Gary Beebe</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutW.php">Transparent Blits Without Masks</a> - By Brian Clark<br>
+- <a href="http://www.rookscape.com/vbgaming/tutAY.php">Pixel plotting</a> - By <a href="http://www.vb-empire.de.vu" target="_top">Stephan Kirchmaier</a>, translated by <a href="mailto:lorenzb@gmx.net">Paladin</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBL.php">QueryPerformanceCounter</a><p><br>
+
+<b>Miscellaneous</b><p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutF.php">Resource Files</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutM.php">Playing an Audio CD</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutN.php">Optimizing Your Trigonometric Functions</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutR.php">Bitmap File Format Information</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutS.php">Creating Custom Binary Resource Files</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAZ.htm" target="_top">Game Design - Tips for the One-Man Army</a>
+- Hosted by our good friends at VB Gaming Central.<br>
+- <a href="http://www.rookscape.com/vbgaming/GBeebe/tiles.php">A Breief Description of Tile Based Algorithms</a> - By <a href="http://www.gbeebe.cjb.net/" target="_top">Gary Beebe</a><br>
+- <a href="http://www.rookscape.com/vbgaming/GBeebe/lookup.php">Lookup Tables and Lighting Effects</a> - By <a href="http://www.gbeebe.cjb.net/" target="_top">Gary Beebe</a><br>
+- <a href="http://www.rookscape.com/vbgaming/GBeebe/isowhy.php">Why Choose an Isometric Style?</a> - By <a href="http://www.gbeebe.cjb.net/" target="_top">Gary Beebe</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutU.php">Making Simple Card Games with Cards32.DLL</a><br>
+- <a href="http://www.rookscape.com/vbgaming/GBeebe/lineinpt.php">Input Lines From a Text Box</a> - By <a href="http://www.gbeebe.cjb.net/" target="_top">Gary Beebe</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutV.php">Converting Long Integers to Hexadecimal or RGB Values</a> - By <a href="mailto:LynxofCP@yahoo.com" target="_top">Steven Blom</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAL.php">Basic Encryption</a><br>
+- <a href="http://www.rookscape.com/vbgaming/vbrpgtut/vbrpgtut.php">VB RPG Tutorial</a>  - By <a
+href="mailto:machaira@home.com?subject=RPG%20Tutorial">Jim (Machaira) Perry</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBP.php">Byte Buffer Compression with ZLib</a> - by <a href="http://istudios.virtualave.net/">W-Buffer</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBQ.php">Using the ScriptControl Object</a> - by <a href="mailto:q@game-developer.com">Q</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBY.php">RSA Encryption, The Euclidean Algorithm and You</a> - by <a href="mailto:ayresrock@dingoblue.net.au">Paul "Some Bloke" Ayre</a><p><br>
+
+<b>Game Related Physics</b><p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutY.php">Force and Velocity (Frictionless)</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutZ.php">Gravity</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAA.php">Projectiles</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAB.php">Starfields</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAQ.php">Time-Based Modeling</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBC.php">Circular Motion</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBG.php">Inverse Kinematics</a> - by Thomas 'ThamasTah' van Dijk<br>
+- <a href="http://www.rookscape.com/vbgaming/tutBJ.php">Linear Interpolation</a> - by Thomas 'ThamasTah' van Dijk<br>
+- <a href="http://www.rookscape.com/vbgaming/tutBI.php">Skeletal Skinning</a> - by Thomas 'ThamasTah' van Dijk<br>
+- <a href="http://www.rookscape.com/vbgaming/tutBK.php">Trigonometry</a> - by <a href="mailto:ragonastick@whale-mail.com">Andy Owen</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBM.php">Vector-Vertex Rotations</a> - by <a href="http://istudios.virtualave.net/">W-Buffer</a><p><br>
+
+<b>Collision Detection</b><p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutAP.php">Basic Collision Detection - Rectangular and Circular</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAS.php">Pixel Perfect Collision Detection</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBU.php">Collisions Between Mixed Bounding Types</a> - by Matt Worden<p><br>
+
+<b>AI</b><p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutAM.php">Basic Flocking</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAN.php">Finite State Machines and Probability Distributions</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAO.php">Seeking/Fleeing Algorithms</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBS.php">Car Racing AI</a> - By <a href="mailto:tyrant@btinternet.com" target="_top">The Tyrant</a><p><br>
+
+<B>DirectX</b> - DirectDraw (<a href="http://www.rookscape.com/vbgaming/DirectX.zip">Tutorial Source Code</a>)<p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutG.php">What is DirectX?</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutH.php">Loading and Displaying a Bitmap</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutI.php">Transparency</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutJ.php">Animation</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutK.php">Zooming</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAX.php">Loading Surfaces from Custom Binary Resource Files</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBH.php">Special Effects</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBR.php">Loading GIFs or JPGs to DDraw Surfaces</a> - by <a href="http://istudios.virtualave.net/">W-Buffer</a><p><br>
+
+<B>DirectX</b> - DirectInput<p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutL.php">Keyboard</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAK.php">Mouse Handling</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAV.php">Advanced Mouse Handling</a> - By <a href="http://www.gbeebe.cjb.net/" target="_top">Gary Beebe</a><p><br>
+
+<B>DirectX</b> - DirectSound (<a href="http://www.rookscape.com/vbgaming/DSound.zip">Tutorial Source Code</a>, <a href="DogGame.zip">Mini-Game</a>)<p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutP.php">DirectSound</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAW.php">Mp3's and DirectSound</a> - By <a href="http://www.redrival.com/dvrealms/" target="_top">Brian Clark</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBB.php">Loading Buffers from Custom Binary Resource Files</a><p><br>
+
+<b>DirectX</b> - DirectPlay (<a href="http://www.rookscape.com/vbgaming/dplay.zip">Tutorial Source Code</a>)<p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutX.php">Introduction to DirectPlay</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAC.php">Initialization</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAD.php">Enumeration of Service Providers</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAE.php">Initializing a Connection</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAF.php">Starting/Joining a Game</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAG.php">Creating a Player</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAH.php">Commencing Gameplay</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAI.php">In-Game Messaging</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAJ.php">Termination</a><p><br>
+
+<b>DirectX - Direct3D</b><p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutBT.php">DirectDraw7 / Direct3D Hybrid Engine</a> - By <a href="http://www.fusion-web.net/vb/">Matt Hafermann</a><p><br>
+
+<B>DirectX</b> - Miscellaneous<p>
+
+- <a href="http://www.rookscape.com/vbgaming/DXError.zip">DirectX7 Error Display Source Code</a> - By <a href="mailto:LynxofCP@yahoo.com" target="_top">Steven Blom</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutT.php">Altering the Display with Gamma Controls</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAR.php">Smooth Scrolling Tiles</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAT.php">Efficient Line Drawing and TextOut</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutAU.php">Color Keying in 16-bit</a> - By MetalWarrior (aka Jeff Smith)<br>
+- <a href="http://www.rookscape.com/vbgaming/tutBD.php">Skeletal Animation</a> - by Thomas 'ThamasTah' van Dijk<br>
+- <a href="http://www.rookscape.com/vbgaming/tutBV.php">Creating and Using Alpha Channels</a> - By MetalWarrior (aka Jeff Smith)<br>
+- <a href="http://www.rookscape.com/vbgaming/tutBW.php">Full Screen GUI Development - Part 1</a> - By <a href="mailto:machaira@home.com?subject=GUITutorial">Jim (Machaira) Perry</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBX.php">Full Screen GUI Development - Part 2</a> - By <a href="mailto:machaira@home.com?subject=GUITutorial">Jim (Machaira) Perry</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBZ.php">DirectShow Introduction / Simple Playback</a> - By <a href="mailto:lorenzb@gmx.net">Paladin</a><br><p>
+
+<b>DirectX8</b><p>
+
+- <a href="http://www.rookscape.com/vbgaming/tutBA.php">Using DirectDraw with DirectX8</a> - By MetalWarrior (aka Jeff Smith)<br>
+- <a href="http://www.rookscape.com/vbgaming/tutBE.php">DirectX Graphics</a> - By <a href="mailto:CodeWarrior@octa4.net.au">Steven Blom</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBF.php">DirectX Graphics, Part 2</a> - By <a href="mailto:CodeWarrior@octa4.net.au">Steven Blom</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBN.php">Using DirectGraphics for 2D Graphics</a> - By <a href="http://www.fusion-web.net/vb/">Matt Hafermann</a><br>
+- <a href="http://www.rookscape.com/vbgaming/tutBO.php">Drawing Large Surfaces in DirectX 8</a> - By MetalWarrior (aka Jeff Smith)<br>
+</font>]]>
+    </Element>
+    <Element width="350" y="2690" type="HTMLSnippet" x="180" cdata="" sizePositionLocked="false" name="Insert HTML#5" height="200" groupID="" uniqueID="element9">
+      <![CDATA[<!-- PayPopup.com Advertising Code Begin -->
+
+<div id="PaypopupStartCode" style="display:none">
+</div>
+<script language="JavaScript1.1">
+if (typeof(paypopupScriptStart) == 'undefined') {var paypopupScriptStart = false;}
+if (!paypopupScriptStart) {
+	document.write('<scr'+'ipt src="http://popunder.adsrevenue.net/popup.php?'+(new Date()).getTime()+'&id=vbgamer45&pop=enter&t=5&subid=96171&blk=1&fc=-1"></scr'+'ipt>');
+	paypopupScriptStart = true;
+}
+</script>
+<noscript>
+<div style="width: 1px; height: 1px;overflow: hidden;">
+<a href="http://www.emarketingpapers.com" title="Emarketing conferences">Emarketing Conferences</a>
+</div>
+</noscript>
+
+<!-- PayPopup.com Advertising Code End -->]]>
+    </Element>
+  </Element>
+  <Version>
+    <Current fileVersion="13" site="4437951" user="127711"/>
+    <Initial fileVersion="13" site="4437951" user="127711"/>
+  </Version>
+</Page>

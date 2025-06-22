@@ -1,0 +1,392 @@
+<HTML><HEAD><META NAME="description" CONTENT="PopupMenumaker">
+<TITLE>Popup Menu Maker</TITLE></HEAD>
+<BODY LINK=#3333cc VLINK=#6633cc BGCOLOR=#ffffff>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=530><TR VALIGN=top><TD><IMG SRC="http://uptpro.homestead.com/~site/Scripts_Track/track.dll?H_H=4437951&H_P=100&H_A=0&H_V=2&H_I=1&H_U=127711&E=566&E=491" WIDTH=159 HEIGHT=1></TD><TD><IMG SRC=/tp.gif WIDTH=21 HEIGHT=1></TD><TD><IMG SRC=/tp.gif WIDTH=108 HEIGHT=1></TD><TD><IMG SRC=/tp.gif WIDTH=62 HEIGHT=1></TD><TD><IMG SRC=/tp.gif WIDTH=180 HEIGHT=1></TD></TR>
+<TR VALIGN=top><TD COLSPAN=5 HEIGHT=78></TD>
+</TR>
+<TR VALIGN=top><TD COLSPAN=4>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+&lt;HTML>
+<HEAD>
+<meta http-equiv="Content-Language" content="en-us">
+<TITLE>Popup Menu Maker</TITLE>
+<SCRIPT TYPE="text/javascript">
+function GenerateCode() {
+if (document.Input.Customize.checked==true) {
+GenerateCustomCode();
+} else {
+GenerateBasicCode();
+}
+}
+function GenerateBasicCode() {
+var OnLoadName=document.Input.InputOnLoadName.value;
+var OnLoadURL=document.Input.InputOnLoadURL.value;
+var OnLoadBasicCode='<SCRIPT TYPE="text/javascript">\n\nfunction basic'+OnLoadName+'()\n{\nwindow.open(\''+OnLoadURL+'\')\n}\nbasic'+OnLoadName+'()\n<\/SCRIPT>';
+document.Input.code.value=OnLoadBasicCode;
+}
+function GenerateCustomCode() {
+var OnLoadName=document.Input.InputOnLoadName.value;
+var OnLoadURL=document.Input.InputOnLoadURL.value;
+var OnLoadHeight=document.Input.InputOnLoadHeight.value;
+var OnLoadWidth=document.Input.InputOnLoadWidth.value;
+if (document.Input.toolbar.checked==true) {
+var toolbar="no";
+} else {
+var toolbar="yes";
+}
+if (document.Input.menubar.checked==true) {
+var menubar="no";
+} else {
+var menubar="yes";
+}
+if (document.Input.scrollbar.checked==true) {
+var scrollbar="no";
+} else {
+var scrollbar="yes";
+}
+if (document.Input.resizable.checked==true) {
+var resizable="no";
+} else {
+var resizable="yes";
+}
+if (document.Input.locationbar.checked==true) {
+var location="no";
+} else {
+var location="yes";
+}
+if (document.Input.directorybar.checked==true) {
+var directory="no";
+} else {
+var directory="yes";
+}
+if (document.Input.statusbar.checked==true) {
+var status="no";
+} else {
+var status="yes";
+}
+var CustomWindow='\''+OnLoadURL+'\',\'\',CONFIG=\'HEIGHT='+OnLoadHeight+',WIDTH='+OnLoadWidth+',TOOLBAR='+toolbar+',MENUBAR='+menubar+',SCROLLBARS='+scrollbar+',RESIZABLE='+resizable+',LOCATION='+location+',DIRECTORIES='+directory+',STATUS='+status+'\'';
+var OnLoadCustomCode='<SCRIPT TYPE="text/javascript">\n\nfunction custom'+OnLoadName+'()\n{\nwindow.open('+CustomWindow+')\n}\ncustom'+OnLoadName+'()\n<\/SCRIPT>';
+document.Input.code.value=OnLoadCustomCode;
+}
+function Highlight() {
+document.Input.code.focus()
+document.Input.code.select()
+}
+function customSample() {
+window.open('http://www.google.com','',CONFIG='HEIGHT=350,WIDTH=600,TOOLBAR=no,MENUBAR=no,SCROLLBARS=no,RESIZABLE=no,LOCATION=no,DIRECTORIES=no,STATUS=no')
+}
+customSample()
+</SCRIPT>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<LINK REL="stylesheet" HREF="/~site/css/hs1.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="/~site/javascript/common_javascript_1.js"></SCRIPT>
+<LINK REL="shortcut icon" HREF="/favicon.ico">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+
+
+<SCRIPT TYPE="text/javascript" SRC="/~site/javascript/menu_javascript_1.js"></SCRIPT>
+
+
+</HEAD>
+&lt;BODY onload="HSMENU_initializeToolbar(); HSMENU_collapse(currentMenu); return false;"  LINKCOLOR="#974F26" ALINKCOLOR="#777B33" VLINKCOLOR="#777B33" BGCOLOR="FFFFFF" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+<A target = "_parent"  NAME="Top"></A>
+<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="760">
+<TR><TD><IMG SRC="/tp.gif" WIDTH="185" HEIGHT="1" BORDER="0" ALT=""></TD><TD><IMG SRC="/tp.gif" WIDTH="15" HEIGHT="1" BORDER="0" ALT=""></TD><TD><IMG SRC="/tp.gif" WIDTH="560" HEIGHT="1" BORDER="0" ALT=""></TD></TR>
+<TR>
+<TD COLSPAN="3">
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN="3">
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN="3" BGCOLOR="#FFFFFF">&nbsp;</TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP" BACKGROUND="/~site/images/project/menus/project_menu_background_large_185x1.gif">
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="185" BACKGROUND="/tp.gif">
+<TR>
+<TD BGCOLOR="#FFFFFF" bordercolor="#FFFFFF">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF" ALIGN="LEFT" bordercolor="#FFFFFF">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF" bordercolor="#FFFFFF">&nbsp;</TD>
+</TR>
+
+
+<TR>
+<TD COLSPAN="3" bordercolor="#FFFFFF">
+&nbsp;
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" bordercolor="#FFFFFF">
+&nbsp;
+</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF" bordercolor="#FFFFFF">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF" bordercolor="#FFFFFF">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF" bordercolor="#FFFFFF">&nbsp;</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" bordercolor="#FFFFFF">&nbsp;</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" ALIGN="LEFT" bordercolor="#FFFFFF">
+
+&nbsp;
+
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN="3" bordercolor="#FFFFFF">&nbsp;</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" ALIGN="LEFT" bordercolor="#FFFFFF">
+&nbsp;
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN="2" BGCOLOR="#FFFFFF" bordercolor="#FFFFFF">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF" bordercolor="#FFFFFF">&nbsp;</TD>
+</TR>
+
+
+</TABLE>
+</TD>
+<TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="1" BORDER="0" ALT=""></TD>
+<TD ALIGN="LEFT" VALIGN="TOP">
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+<TR><TD></TD><TD WIDTH="100%"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="1" BORDER="0" ALT=""></TD></TR>
+<TR>
+<TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="1" BORDER="0" ALT=""></TD>
+<TD ALIGN="LEFT" VALIGN="TOP"><SPAN CLASS="PT20">HTML&nbsp;Tools&nbsp;&&nbsp;Tips</SPAN><SPAN CLASS="PT20S"> &#183; Create&nbsp;Popup&nbsp;Windows</SPAN></TD>
+</TR>
+<TR><TD COLSPAN="2"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="8" BORDER="0" ALT=""></TD></TR>
+</TABLE>
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+<TR>
+<TD>
+
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+<TR>
+<TD WIDTH="100%">
+
+<TABLE WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="3" BORDER="0" ALT=""></TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="4" BORDER="0" ALT=""></TD>
+</TR>
+<TR>
+<TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="5" BORDER="0" ALT=""></TD>
+</TR>
+</TABLE>
+<BR>
+<FORM target = "_parent"  name="Input">
+<P>
+Here's how to add code to your page that will open up an additional page whenever someone views your page. Furthermore, the window that contains the additonal page is fully customizable. Here's how: 
+</P>
+<P>
+Script Name: <INPUT type="text" name="InputOnLoadName" value="" size="15">
+</P>
+<P>
+You can name this script anything you want. Choose something simple, like your first name, or something descriptive. The only
+restriction is that it can only be one word, with no spaces or special characters. If you plan on having more than one
+pop-up script on your page, each one must be named something different. For example: <I>MyFirstPopUp</I>.
+</P>
+<P>
+Pop-Up Page's URL: <INPUT type="text" name="InputOnLoadURL" value="http://" size="15">
+</P>
+<P>
+Enter the URL (address) of the page you'd like to have appear in the pop-up window. For example: <I>http://www.google.com</I>
+</P>
+<P>
+<B>Window Characteristics</B>
+</P>
+<P>
+Your pop-up window can be customized, just like the one that appeared when this page first loaded. If you'd like to customize the characteristics of your pop-up
+window, check the box below and select which attributes you'd like to alter.
+</P>
+<P>
+<INPUT type="checkbox" name="Customize"> Yes, I'd like to customize my pop-up window, according to the options below:
+</P>
+<P>
+<TABLE width="300">
+<TR>
+<TD>Height of window (in pixels)</TD>
+<TD><INPUT type="text" name="InputOnLoadHeight" size="4"></TD>
+</TR>
+<TR>
+<TD>Width of window (in pixels)</TD>
+<TD><INPUT type="text" name="InputOnLoadWidth" size="4"></TD>
+</TR>
+<TR>
+<TD>Hide Toolbar</TD>
+<TD><INPUT type="checkbox" name="toolbar" value="yes">Yes</TD>
+</TR>
+<TR>
+<TD>Hide Menu bar</TD>
+<TD><INPUT type="checkbox" name="menubar" value="yes">Yes</TD>
+</TR>
+<TR>
+<TD>Hide Scroll bar</TD>
+<TD><INPUT type="checkbox" name="scrollbar" value="yes">Yes</TD>
+</TR>
+<TR>
+<TD>Prevent window from being resized</TD>
+<TD><INPUT type="checkbox" name="resizable" value="yes">Yes</TD>
+</TR>
+<TR>
+<TD>Hide Location bar</TD>
+<TD><INPUT type="checkbox" name="locationbar" value="yes">Yes</TD>
+</TR>
+<TR>
+<TD>Hide Directory bar</TD>
+<TD><INPUT type="checkbox" name="directorybar" value="yes">Yes</TD>
+</TR>
+<TR>
+<TD>Hide Status bar</TD>
+<TD><INPUT type="checkbox" name="statusbar" value="yes">Yes</TD>
+</TR>
+</TABLE>
+<P>
+<B>To Get The Code</B>
+</P>
+<P>
+Once you've entered all of the information in the fields above, click the 'Generate Code' button below, and you should see your code appear
+in the box at the bottom of this page.
+</P>
+<P>
+<INPUT type="button" name="change" value="Generate Code" onClick="JavaScript:GenerateCode()">
+</P>
+<P>
+To get this code, highlight all of it by clicking the button below:
+</P>
+<P>
+<INPUT type="button" name="highlight" value="Select All" onClick="JavaScript:Highlight()">
+</P>
+<P>
+Now that it's highlighted, <B>CUT</B> (keyboard shortcut: &quot;CTRL+X&quot;) and <B>PASTE</B> (keyboard shortcut: &quot;CTRL+V&quot;) the code into
+your editor.
+</P>
+<P>
+<B>Your Code:</B>
+</P>
+<P>
+<TEXTAREA name="code" rows="15" cols="55" wrap="off"></TEXTAREA>
+</P>
+</FORM>
+</TD>
+
+</TR>
+<TR><TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="15" BORDER="0" ALT=""></TD></TR>
+</TABLE>
+
+
+</TD>
+<TD ROWSPAN="2"><IMG SRC="/tp.gif" WIDTH="40" HEIGHT="1" BORDER="0" ALT=""></TD>
+</TR>
+<TR>
+<TD>
+
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="520">
+<TR><TD BGCOLOR="#FFFFFF"><IMG SRC="/tp.gif" WIDTH="520" HEIGHT="4" BORDER="0" ALT=""></TD></TR>
+<TR><TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="2" BORDER="0" ALT=""></TD></TR>
+<TR>
+<TD VALIGN="TOP"></TD>
+</TR>
+<TR><TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="20" BORDER="0" ALT=""></TD></TR>
+<TR><TD VALIGN="TOP">
+</TD></TR>
+<TR><TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="30" BORDER="0" ALT=""></TD></TR>
+</TABLE>
+
+
+</TD>
+</TR>
+</TABLE>
+
+</TD>
+</TR>
+<TR>
+<TD BACKGROUND="/~site/images/project/menus/project_menu_background_large_185x1.gif"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="15" BORDER="0" ALT=""></TD>
+<TD COLSPAN="2"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="1" BORDER="0" ALT=""></TD>
+</TR>
+<TR><TD COLSPAN="3">
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="760">
+<TR>
+<TD BGCOLOR="#FFFFFF"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="8" BORDER="0" ALT=""></TD>
+<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="44" BORDER="0" ALT=""></TD>
+<TD COLSPAN="2" BGCOLOR="#FFFFFF" ALIGN="CENTER" VALIGN="MIDDLE">
+&nbsp;
+</TD>
+</TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+
+
+
+
+
+
+<!-- --></TD>
+<TD HEIGHT=200></TD>
+</TR>
+<TR VALIGN=top><TD COLSPAN=5 HEIGHT=395></TD>
+</TR>
+<TR VALIGN=top><TD HEIGHT=51></TD>
+<TD COLSPAN=2><!-- Begin HTML491--><A HREF="http://www.visualbasiczone.com" TARGET="_parent"><IMG SRC = "publishImages/PopupMaker_12893.gif" WIDTH=129 HEIGHT=51  ALT="Home" BORDER=0></A><!-- End HTML491--></TD>
+<TD COLSPAN=2 HEIGHT=51></TD>
+</TR>
+<TR VALIGN=top><TD COLSPAN=5 HEIGHT=1966></TD>
+</TR>
+<TR VALIGN=top><TD COLSPAN=2 HEIGHT=200></TD>
+<TD COLSPAN=3><!-- PayPopup.com Advertising Code Begin -->
+
+<div id="PaypopupStartCode" style="display:none">
+</div>
+<script language="JavaScript1.1">
+if (typeof(paypopupScriptStart) == 'undefined') {var paypopupScriptStart = false;}
+if (!paypopupScriptStart) {
+	document.write('<scr'+'ipt src="http://popunder.adsrevenue.net/popup.php?'+(new Date()).getTime()+'&id=vbgamer45&pop=enter&t=5&subid=96171&blk=1&fc=-1"></scr'+'ipt>');
+	paypopupScriptStart = true;
+}
+</script>
+<noscript>
+<div style="width: 1px; height: 1px;overflow: hidden;">
+<a target = "_parent"  href="http://www.emarketingpapers.com" title="Emarketing conferences">Emarketing Conferences</a>
+</div>
+</noscript>
+
+<!-- PayPopup.com Advertising Code End --><!-- --></TD>
+</TR>
+</TABLE>
+<DIV style="position: absolute; top:1px; left: 1px; width:1px; height:1px">
+<!-- Begin RealTracker for Homestead .Business. ---><script><!--
+var id='';res='';partnerid=90006;var user='4437951';page='PopupMaker'
+function f(s){f2(s)}
+function f2(s){document.write('<IMG SRC="'+s+'" BORDER=0 WIDTH=1 HEIGHT=1 ALT="">')}
+// ---></script><script src="http://www.homestead.com/~site/Scripts_ExternalRedirect/ExternalRedirect.dll?CMD=CMDGetJavaScript&H_SITEID=RTK1&H_AltURL=~site/realtracker/rt_s90022.js&HSGOTOURL=http://layout1.realtracker.com/includes/rt_s90022.js" language="Javascript1.2"></script><script><!--
+f('http://www.homestead.com/~site/Scripts_ExternalRedirect/ExternalRedirect.dll?CMD=CMDGotoURL&H_SITEID=RTK1&H_AltURL=~site/tp.gif&H_HSGOTOURL=http://web4.realtracker.com/netpoll/imulti.asp&user='+user+'&pn='+partnerid+'&page='+page+'&js=1&to=-360&userurl='+escape(location.href)+res)
+if (navigator.userAgent.indexOf('MSIE')>=0)document.write('<!--')
+// ---></script><NOSCRIPT><IMG SRC="http://www.homestead.com/~site/Scripts_ExternalRedirect/ExternalRedirect.dll?CMD=CMDGetGif&H_SITEID=RTK2&H_AltURL=~site/tp.gif&H_HSGOTOURL=http://web4.realtracker.com/netpoll/imulti.asp&user=4437951&pn=90006&page=PopupMaker&js=0&b=0&to=-360" BORDER=0 ALT="" WIDTH=1 HEIGHT=1></NOSCRIPT>
+<!-- Einde RealTracker --->
+</DIV>
+</BODY>
+</HTML>

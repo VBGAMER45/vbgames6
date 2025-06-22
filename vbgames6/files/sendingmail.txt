@@ -1,0 +1,75 @@
+Author: Abstractvb
+Date: 3/18/2000 10:43:55 AM
+ID: 52
+
+
+Shows how to send Mail Messages using sockets and build the SMTP request directly.
+
+Have you ever wanted to send mail to someone without Microsoft MAPI control sending your real information with it? Well then simply handle the message yourself.
+If your using a Proxy or firewall this code may not work for you.
+It's simple to build an SMTP message just call this function passing in 4 parameters:
+psTo  - This is the email address of the recipient.
+
+psFrom - This is your email address.
+
+psSubject - Subject for the message.
+
+psBody - The message text.
+
+ 
+
+Controls Needed
+ 
+Control Type Control Name 
+Form Form1 
+WinSock Control Socket 
+Textbox txtHost 
+Textbox txtPort 
+Textbox txtTo 
+Textbox txtFrom 
+Textbox txtSubject 
+Textbox txtBody 
+CommandButton cmdSend 
+
+Place the following on Form1:
+
+Option Explicit
+Dim ConnectedState As Boolean
+
+Private Sub cmdSend_Click()
+    Dim lbSendWorked As Boolean
+    
+    On Error Resume Next
+    Socket.Close
+    Socket.Connect txtHost, txtPort
+            
+    Do While ConnectedState = False
+        DoEvents
+    Loop
+                
+    lbSendWorked = SendMail(txtTo, txtFrom, txtSubject, txtBody)
+    
+    Socket.Close
+End Sub
+
+Private Sub Socket_Connect()
+    ConnectedState = True
+End Sub
+
+Function SendMail(psTo As String, psFrom As String, psSubject As String, _
+                     psBody As String) As Boolean
+    Dim lsMessage As String
+    Dim lsSep As String
+        
+    lsMessage = "MAIL FROM: <" & psFrom & ">" & vbCrLf _
+        & "RCPT TO: <" & psTo & ">" & vbCrLf _
+        & "DATA" & vbCrLf _
+        & "DATE: " & Format$(Now, "dd mmm yy ttttt") & vbCrLf _
+        & "FROM: " & psFrom & vbCrLf _
+        & "TO: " & psTo & vbCrLf _
+        & "SUBJECT: " & psSubject & vbCrLf & vbCrLf _
+        & psBody & vbCrLf & "." & vbCrLf
+               
+    Socket.SendData (lsMessage)
+End Function
+

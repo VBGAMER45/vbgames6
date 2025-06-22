@@ -1,0 +1,54 @@
+'Author: nofx
+'Author's email: op_ivy_fx@hotmail.com
+'Date Submitted: 3/31/1999
+'Compatibility: VB 6,VB 5,VB 4/32
+
+'Task: Two ways of playing Wav or Midi.
+
+'Declarations
+'------------------------------'
+'         CaptiveX TM.         '
+'   Writen by nofx (op-ivy)    '
+'http://www.sharpnet.net/~nofx/'
+'or visit us on EFNET #captivex'
+'             P.S.             '
+'           Have Fun           '
+'------------------------------'
+#If Win32 Then
+Public Const SND_ASYNC& = &H1
+Public Const SND_SYNC& = &H0
+#Else
+Public Const SND_ASYNC% = &H1
+Public Const SND_SYNC% = &H0
+#End If
+
+#If Win32 Then
+Public Declare Function sndPlaySound& Lib "winmm.dll" Alias "sndPlaySoundA"
+(ByVal lpszSoundName As String, ByVal uFlags As Long)
+Public Declare Function mciExecute& Lib "winmm.dll" (ByVal lpstrCommand As
+String)
+#Else
+Public Declare Function sndPlaySound% Lib "mmsystem.dll" (ByVal lpszSoundName As
+String, ByVal uFlags As Integer)
+Public Declare Function mciExecute% Lib "mmsystem.dll" (ByVal lpstrCommand As
+String)
+#End If
+
+'Code:
+Function PlaySound(PathToWavOrMidi$)
+Dim lFlags As Long
+Dim lPlay As Long
+
+lFlags = SND_ASYNC& Or SND_SYNC& 'Returns to the begining of Wav or Midi
+lPlay = sndPlaySound(PathToWavOrMidi$, lFlags) 'Plays the Wav or Midi Sound
+End Function
+
+Function PlaySound2(PathToWavOrMidi$)
+Dim lPlay As Long
+
+lPlay = mciExecute("Open " & PathToWavOrMidi$)
+If lPlay = 0 Then
+lPlay = mciExecute("Close")
+End If
+'Not much to explain here i think you got my point
+End Function

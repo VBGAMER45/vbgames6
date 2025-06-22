@@ -1,0 +1,15 @@
+'Author: Martin McCormick
+'Author's email: slimshady_5_5_5@yahoo.com
+'Date Submitted: 8/12/2000
+'Compatibility: VB 6
+
+'Task: MOVE A FILE
+
+'Declarations
+Private Declare Function MoveFile Lib "kernel32.dll" Alias "MoveFileA" (ByVal
+lpExistingFileName As String, ByVal lpNewFileName As String) As Long
+
+'Code:
+a = MoveFile("C:\MyFiles\thefiletomove.txt", "C:\destination\thefiletomove.txt")
+'the first part is the path for the file to move and the second is the place to
+move it

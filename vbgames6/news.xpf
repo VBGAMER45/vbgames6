@@ -1,0 +1,31 @@
+<Page lastSave="1296685028294" lastUpdated="Wed Feb 02 16:17:08 CST 2011" unsaved="false" lastPublish="1296685031692" footerSelection="1" lastMod="1296685026056" dirty="" fileVersion="2">
+  <Element copyrightFooterStyle="Select A Style" uidCounter="9" keyword="news" description="" pageURI="http://vbgames6.homestead.com/news.html" onunload="" followedLinkColor="#6633CC" onload="" onPublish="PageElement" backgroundType="bgColor" pagePassword="" width="650" type="Page" passwordProtectedFile="" bgImage="" filename="news" imageToolbarOff="true" headTag="" linkColor="#3333CC" bgColor="#000000" bgPattern="" uniqueID="element1" center="false" currentWindow="1" title="News Room">
+    <Element width="347" y="234" type="HTMLSnippet" x="125" cdata="" sizePositionLocked="false" name="Insert HTML#1" height="175" groupID="" uniqueID="element2">
+      <![CDATA[<table border=0 cellpadding=3 cellspacing=0 bgcolor="#000000">
+<tr>
+	<td>
+	<iframe
+		src="http://vbwire.com/inews.asp?id= 449966"
+		scrolling="no"
+		marginwidth=0
+		marginheight=0
+		frameborder=0
+		vspace=0
+		hspace=0
+		width=400
+		height=100></iframe>
+	</td>
+</tr>
+</table>
+]]>
+    </Element>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="48" sizePositionLocked="false" name="Text#1" border-width="0" width="161" type="Text" y="195" x="224" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element3"><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#FF0033" font-size="12" font-family="Helvetica" href="" link_target="" underline="false">Vb Wire News!!!</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false"></Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element bgcolor="" height="86" sizePositionLocked="false" name="Text#2" border-width="0" width="509" type="Text" y="18" x="76" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element4"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#FF0033" font-size="36" font-family="Helvetica" href="" link_target="" underline="false">Visual Basic News</Segment></Paragraph><Paragraph align="left" indent="0" style="none"><Segment font-style="plain" color="#FF0033" font-size="10" font-family="Helvetica" href="" link_target="" underline="false"></Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element textFont="Helvetica" textColor="#FF0033" onPreview="StandardButton" height="49" sizePositionLocked="false" textHeight="12" onPublish="StandardButton" name="Standard Button#1" width="85" type="StandardButton" color="#000000" alt="Home" bthickness="5" y="451" x="256" textSize="16" link="index.html" buttonLabel="Home" link_target="_self" groupID="" bevel="24" italic="false" bold="true" uniqueID="element5"/>
+    <Form height="auto" width="100%" y="0" x="0" resizable="no"/>
+  </Element>
+  <Version>
+    <Current fileVersion="13" site="4437951" user="127711"/>
+    <Initial fileVersion="13" site="4437951" user="127711"/>
+  </Version>
+</Page>

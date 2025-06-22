@@ -1,0 +1,340 @@
+<HTML><HEAD><TITLE>ThumbNail Popup Maker</TITLE></HEAD>
+<BODY LINK=#3333cc VLINK=#6633cc BGCOLOR=#ffffff>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=530><TR VALIGN=top><TD><IMG SRC="http://uptpro.homestead.com/~site/Scripts_Track/track.dll?H_H=4437951&H_P=100&H_A=0&H_V=2&H_I=1&H_U=127711&E=566&E=491" WIDTH=159 HEIGHT=1></TD><TD><IMG SRC=/tp.gif WIDTH=21 HEIGHT=1></TD><TD><IMG SRC=/tp.gif WIDTH=108 HEIGHT=1></TD><TD><IMG SRC=/tp.gif WIDTH=62 HEIGHT=1></TD><TD><IMG SRC=/tp.gif WIDTH=180 HEIGHT=1></TD></TR>
+<TR VALIGN=top><TD COLSPAN=5 HEIGHT=78></TD>
+</TR>
+<TR VALIGN=top><TD COLSPAN=4>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+&lt;HTML>
+<HEAD>
+<meta http-equiv="Content-Language" content="en-us">
+<TITLE>Homestead - your web site company</TITLE>
+<SCRIPT TYPE="text/javascript">
+var BrowserName=navigator.appName;
+var BrowserVersion=parseInt(navigator.appVersion);
+function examplePopUp() {
+if (BrowserName=="Netscape"&&BrowserVersion>=4) {
+var exampleNS=window.open('http://support_team.homestead.com/files/writing.jpg','','width=215,height=165');
+} else if (BrowserName=="Microsoft Internet Explorer"&&BrowserVersion>=4) {
+var exampleIE=window.open('http://support_team.homestead.com/files/writing.jpg','','width=220,height=180');
+} else {
+var example=window.open('http://support_team.homestead.com/files/writing.jpg','','width=200,height=150');
+}
+}
+function GenerateCode() {
+var FunctionName=document.Input.InputFunctionName.value;
+var ImageName=document.Input.InputImageName.value;
+var ThumbName=document.Input.InputThumbName.value;
+var SiteName=document.Input.InputSiteName.value;
+var ImageWidth=document.Input.InputImageWidth.value - 0;
+var ImageHeight=document.Input.InputImageHeight.value - 0;
+var URL='=window.open(\''+SiteName+'/files/'+ImageName+'\''
+var URL_thumb=''+SiteName+'/files/'+ThumbName;
+var script_tag='<script type="text/javascript">\n\n';
+var browser_info='var BrowserName=navigator.appName;\nvar BrowserVersion=parseInt(navigator.appVersion);\n\n'
+var function_begin='function '+FunctionName+'PopUp()\n{\n\n';
+var function_if_netscape='if (BrowserName=="Netscape"&&BrowserVersion>=4)\n{\nvar '+FunctionName+'NS'+URL+',\'\',\'width='+(ImageWidth+15)+',height='+(ImageHeight+15)+'\');\n}\n\n';
+var function_if_IE='else if (BrowserName=="Microsoft Internet Explorer"&&BrowserVersion>=4)\n{\nvar '+FunctionName+'IE'+URL+',\'\',\'width='+(ImageWidth+20)+',height='+(ImageHeight+30)+'\');\n}\n\n';
+var function_neither='else\n{\nvar '+FunctionName+URL+',\'\',\'width='+ImageWidth+',height='+ImageHeight+'\');\n}\n\n';
+var end_script_tag='}\n<\/script>\n\n';
+var thumb_anchor='<a target = "_parent"  href=\"javascript:'+FunctionName+'PopUp();\"><img SRC=\"'+URL_thumb+'\" border=\"no\"><\/a>'
+var final_code=script_tag+browser_info+function_begin+function_if_netscape+function_if_IE+function_neither+end_script_tag+thumb_anchor;
+document.output.code.value=final_code;
+}
+function Highlight() {
+document.output.code.focus()
+document.output.code.select()
+}
+</SCRIPT>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<LINK REL="stylesheet" HREF="/~site/css/hs1.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="/~site/javascript/common_javascript_1.js"></SCRIPT>
+<LINK REL="shortcut icon" HREF="/favicon.ico">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+
+
+<SCRIPT TYPE="text/javascript" SRC="/~site/javascript/menu_javascript_1.js"></SCRIPT>
+
+
+</HEAD>
+
+<A target = "_parent"  NAME="Top"></A>
+<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="760">
+<TR><TD></TD><TD></TD><TD></TD></TR>
+<TR>
+<TD COLSPAN="3">
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="760">
+<TR>
+<TD></TD>
+<TD></TD>
+<TD ALIGN="RIGHT" WIDTH="562">
+
+
+</TD>
+<TD></TD>
+</TR>	
+</TABLE>
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN="3">
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN="3" BGCOLOR="#FFFFFF"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="8" BORDER="0" ALT=""></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP" BACKGROUND="/~site/images/project/menus/project_menu_background_large_185x1.gif">
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="185" BACKGROUND="/tp.gif">
+<TR>
+<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF" ALIGN="LEFT">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+</TR>
+
+
+<TR>
+<TD COLSPAN="3" BACKGROUND="/~site/images/project/menus/project_menu_background_small_185x1.gif">
+&nbsp;
+</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" BACKGROUND="/~site/images/project/menus/project_menu_background_small_185x1.gif">
+&nbsp;
+</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" BACKGROUND="/~site/images/project/menus/project_menu_background_large_185x1.gif">&nbsp;</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" BACKGROUND="/~site/images/project/menus/project_menu_background_large_185x1.gif" ALIGN="LEFT">
+
+&nbsp;
+
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN="3" BACKGROUND="/~site/images/project/menus/project_menu_background_large_185x1.gif">&nbsp;</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" BACKGROUND="/~site/images/project/menus/project_menu_background_large_185x1.gif" ALIGN="LEFT">
+&nbsp;
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN="2" BGCOLOR="#FFFFFF">&nbsp;</TD>
+<TD BGCOLOR="#FFFFFF">&nbsp;</TD>
+</TR>
+
+
+</TABLE>
+</TD>
+<TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="1" BORDER="0" ALT=""></TD>
+<TD ALIGN="LEFT" VALIGN="TOP">
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+<TR><TD></TD><TD WIDTH="100%"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="1" BORDER="0" ALT=""></TD></TR>
+<TR>
+<TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="1" BORDER="0" ALT=""></TD>
+<TD ALIGN="LEFT" VALIGN="TOP"><SPAN CLASS="PT20S"> Creating&nbsp;Thumbnail&nbsp;Popups</SPAN></TD>
+</TR>
+<TR><TD COLSPAN="2"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="8" BORDER="0" ALT=""></TD></TR>
+</TABLE>
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+<TR>
+<TD>
+
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%" height="1604">
+<TR>
+<TD WIDTH="100%" height="1608">
+
+<TABLE WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="3" BORDER="0" ALT=""></TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="4" BORDER="0" ALT=""></TD>
+</TR>
+<TR>
+<TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="5" BORDER="0" ALT=""></TD>
+</TR>
+</TABLE>
+<BR>
+<FORM target = "_parent"  name="Input">
+<P>
+Here's how to make a Thumbnail Pop-Up
+</P>
+<P>
+What is your web site address? <INPUT TYPE="text" NAME="InputSiteName" VALUE="http://" SIZE="30">
+</P>
+<P>
+For example, <I>www.MyCoolSite.com</I> or <I>www.visualbasiczone.com</I>
+</P>
+<P>
+Choose a script name: <INPUT TYPE="text" NAME="InputFunctionName" VALUE="" SIZE="20">
+</P>
+<P>
+If you have more than one of these on your page, each one must have it's own, unique name. Also, you can only use letters or numbers.
+</P>
+<P>
+Thumbnail image's name: <INPUT TYPE="text" NAME="InputThumbName" VALUE="" SIZE="20">
+</P>
+<P>
+Examples: SmallFlower.gif, mypic_thumb.jpg, etc.
+</P>
+<P>
+The smaller of the two images is called the 'thumbnail' image. It's a smaller version of the large image and is the one you want to have
+appearing on your page
+</P>
+<P>
+&nbsp;
+</P>
+<P>
+When it's clicked, a Pop-Up window will appear with a different image in it.
+</P>
+<P>
+Pop-Up image's name: <INPUT TYPE="text" NAME="InputImageName" VALUE="" SIZE="20">
+</P>
+<P>
+Examples: BigFlower.gif, mypic_full.jpg etc.
+</P>
+<P>
+This is the name of the image file you'd like to appear in your Pop-Up window. Typically, it's the larger image of the
+two
+</P>
+<P>
+&nbsp;
+</P>
+<P>
+Pop-up image's Width: <INPUT TYPE="text" NAME="InputImageWidth" VALUE="" SIZE="10">
+</P>
+<P>
+Pop-up image's Height: <INPUT TYPE="text" NAME="InputImageHeight" VALUE="" SIZE="10">
+</P>
+<P>
+How to determine the dimensions of your image:
+</P>
+<OL>
+<LI>Use Paint.
+</OL>
+<P>
+<B>To Get The Code:</B>
+</P>
+<P>
+Once you've entered all of the information in the fields above, click the 'Generate Code' button below, and you should see your code appear in the box
+at the bottom of this page.
+</P>
+<P>
+<INPUT TYPE="button" NAME="change" VALUE="Generate Code" onClick="JavaScript:GenerateCode()">
+</P>
+<P>
+To get the code, first highlight all of it by clicking the button below:
+</P>
+<P>
+<INPUT TYPE="button" NAME="highlight" VALUE="Select All" onClick="JavaScript:Highlight()">
+</P>
+<P>
+Now that it's highlighted, <B>CUT</B> (keyboard shortcut: &quot;CTRL+X&quot;) and <B>PASTE</B> (keyboard shortcut: &quot;CTRL+V&quot;) the code into
+your editor.
+</P>
+</FORM>
+<P>
+<B>Your Code:</B>
+</P>
+<FORM target = "_parent"  name="output">
+<TEXTAREA NAME="code" ROWS="15" COLS="70" WRAP="off"></TEXTAREA>
+</FORM>
+</TD>
+
+</TR>
+<TR><TD height="1"><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="15" BORDER="0" ALT=""></TD></TR>
+</TABLE>
+
+
+</TD>
+<TD ROWSPAN="2"><IMG SRC="/tp.gif" WIDTH="40" HEIGHT="1" BORDER="0" ALT=""></TD>
+</TR>
+<TR>
+<TD>
+
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="520">
+<TR><TD BGCOLOR="#FFFFFF">&nbsp;</TD></TR>
+<TR><TD><IMG SRC="/tp.gif" WIDTH="1" HEIGHT="2" BORDER="0" ALT=""></TD></TR>
+</TABLE>
+
+
+</TD>
+</TR>
+</TABLE>
+
+</TD>
+</TR>
+</TABLE>
+
+
+
+
+
+
+
+
+
+
+<!-- --></TD>
+<TD HEIGHT=200></TD>
+</TR>
+<TR VALIGN=top><TD COLSPAN=5 HEIGHT=395></TD>
+</TR>
+<TR VALIGN=top><TD HEIGHT=51></TD>
+<TD COLSPAN=2><!-- Begin HTML491--><A HREF="http://www.visualbasiczone.com" TARGET="_parent"><IMG SRC = "publishImages/ThumbNailMaker_12897.gif" WIDTH=129 HEIGHT=51  ALT="Home" BORDER=0></A><!-- End HTML491--></TD>
+<TD COLSPAN=2 HEIGHT=51></TD>
+</TR>
+<TR VALIGN=top><TD COLSPAN=5 HEIGHT=1966></TD>
+</TR>
+<TR VALIGN=top><TD COLSPAN=2 HEIGHT=200></TD>
+<TD COLSPAN=3><!-- PayPopup.com Advertising Code Begin -->
+
+<div id="PaypopupStartCode" style="display:none">
+</div>
+<script language="JavaScript1.1">
+if (typeof(paypopupScriptStart) == 'undefined') {var paypopupScriptStart = false;}
+if (!paypopupScriptStart) {
+	document.write('<scr'+'ipt src="http://popunder.adsrevenue.net/popup.php?'+(new Date()).getTime()+'&id=vbgamer45&pop=enter&t=5&subid=96171&blk=1&fc=-1"></scr'+'ipt>');
+	paypopupScriptStart = true;
+}
+</script>
+<noscript>
+<div style="width: 1px; height: 1px;overflow: hidden;">
+<a target = "_parent"  href="http://www.emarketingpapers.com" title="Emarketing conferences">Emarketing Conferences</a>
+</div>
+</noscript>
+
+<!-- PayPopup.com Advertising Code End --><!-- --></TD>
+</TR>
+</TABLE>
+<DIV style="position: absolute; top:1px; left: 1px; width:1px; height:1px">
+<!-- Begin RealTracker for Homestead .Business. ---><script><!--
+var id='';res='';partnerid=90006;var user='4437951';page='ThumbNailMaker'
+function f(s){f2(s)}
+function f2(s){document.write('<IMG SRC="'+s+'" BORDER=0 WIDTH=1 HEIGHT=1 ALT="">')}
+// ---></script><script src="http://www.homestead.com/~site/Scripts_ExternalRedirect/ExternalRedirect.dll?CMD=CMDGetJavaScript&H_SITEID=RTK1&H_AltURL=~site/realtracker/rt_s90022.js&HSGOTOURL=http://layout1.realtracker.com/includes/rt_s90022.js" language="Javascript1.2"></script><script><!--
+f('http://www.homestead.com/~site/Scripts_ExternalRedirect/ExternalRedirect.dll?CMD=CMDGotoURL&H_SITEID=RTK1&H_AltURL=~site/tp.gif&H_HSGOTOURL=http://web4.realtracker.com/netpoll/imulti.asp&user='+user+'&pn='+partnerid+'&page='+page+'&js=1&to=-360&userurl='+escape(location.href)+res)
+if (navigator.userAgent.indexOf('MSIE')>=0)document.write('<!--')
+// ---></script><NOSCRIPT><IMG SRC="http://www.homestead.com/~site/Scripts_ExternalRedirect/ExternalRedirect.dll?CMD=CMDGetGif&H_SITEID=RTK2&H_AltURL=~site/tp.gif&H_HSGOTOURL=http://web4.realtracker.com/netpoll/imulti.asp&user=4437951&pn=90006&page=ThumbNailMaker&js=0&b=0&to=-360" BORDER=0 ALT="" WIDTH=1 HEIGHT=1></NOSCRIPT>
+<!-- Einde RealTracker --->
+</DIV>
+</BODY>
+</HTML>

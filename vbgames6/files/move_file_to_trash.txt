@@ -1,0 +1,27 @@
+'Declarations
+Private Type SHFILEOPSTRUCT
+    hwnd As Long
+    wFunc As Long
+    pFrom As String
+    pTo As String
+    fFlags As Integer
+    fAnyOperationsAborted As Long
+    hNameMappings As Long
+    lpszProgressTitle As Long
+End Type
+Private Declare Function SHFileOperation Lib "shell32.dll" Alias "SHFileOperationA" (lpFileOp As SHFILEOPSTRUCT) As Long
+Private Const FO_DELETE = &H3
+Private Const FOF_ALLOWUNDO = &H40
+
+____________________
+
+' move file to trash
+'Code
+Dim typOperation As SHFILEOPSTRUCT
+
+    With typOperation
+        .wFunc = FO_DELETE
+        .pFrom = "filename.txt"   'File to move to bin
+        .fFlags = FOF_ALLOWUNDO
+    End With
+    SHFileOperation typOperation

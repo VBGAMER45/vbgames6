@@ -1,0 +1,26 @@
+'Author: Baldho
+'Author's email: http://www.atosoft.cjb.net
+'Date Submitted: 7/30/2000
+'Compatibility: VB 6
+
+'Task: CD Autorun feature for your program.
+
+'Declarations
+no declarations
+
+'Code:
+Make a new timer, set it's interval to 1000 and put this code in it:
+
+Private Sub CDCheck_Timer()
+
+On Error GoTo endofsub
+ChDrive "C:" 'A hdd drive letter
+ChDrive "D:" 'Your CD Drive letter
+
+'begin autorun code here
+  MsgBox "there's a cd in da drive"
+'end autorun code here
+
+endofsub:
+
+End Sub

@@ -1,0 +1,86 @@
+Check if Internet Explorer is installed
+--------------------------------------------------------------------------------
+ 
+ Author: Kim Pedersen 
+
+
+--------------------------------------------------------------------------------
+
+Wouldn't it be great to be able to check if Internet Explorer (IE) is installed on a system?? Well, I thought so. Then I saw an example on the Microsoft (MS) Homepage from ZD Net showing how you can check if IE is installed. One catch though. It uses some sort of DLL. I normaly dislike distributing lot's of external files with my applications so I wrote this small tip. It uses the the APIs RegOpenKeyEx, RegCloseKey and RegQueryValueEx to check if the registry values are set for IE. This approach is suggested by MS by the way..
+ 
+
+
+
+Add this code to a Module:
+
+Option Explicit
+' Registry API
+Private Declare Function RegOpenKeyEx Lib "advapi32.dll" Alias _
+        "RegOpenKeyExA" (ByVal hKey As Long, ByVal lpSubKey As String, _
+        ByVal ulOptions As Long, ByVal samDesired As Long, _
+        phkResult As Long) As Long
+Private Declare Function RegCloseKey Lib "advapi32.dll" _
+        (ByVal hKey As Long) As Long
+Private Declare Function RegQueryValueEx Lib "advapi32.dll" Alias _
+        "RegQueryValueExA" (ByVal hKey As Long, ByVal lpValueName _
+        As String, ByVal lpReserved As Long, lpType As Long, _
+        lpData As Any, lpcbData As Long) As Long
+' Registry Constants
+Private Const HKEY_LOCAL_MACHINE = &H80000002
+Private Const ERROR_SUCCESS = 0&
+' Registry Access Key constants
+Private Const STANDARD_RIGHTS_ALL = &H1F0000
+Private Const KEY_QUERY_VALUE = &H1
+Private Const KEY_SET_VALUE = &H2
+Private Const KEY_CREATE_SUB_KEY = &H4
+Private Const KEY_ENUMERATE_SUB_KEYS = &H8
+Private Const KEY_NOTIFY = &H10
+Private Const KEY_CREATE_LINK = &H20
+Private Const SYNCHRONIZE = &H100000
+Private Const KEY_ALL_ACCESS = ((STANDARD_RIGHTS_ALL Or KEY_QUERY_VALUE _
+        Or KEY_SET_VALUE Or KEY_CREATE_SUB_KEY Or _
+        KEY_ENUMERATE_SUB_KEYS Or KEY_NOTIFY Or KEY_CREATE_LINK) _
+        And (Not SYNCHRONIZE))
+Public Function IsIEAvailable() As Boolean
+    
+    ' This function will return af boolean
+    ' indicating whether or not IE is installed.
+    ' Returns True if IE is available
+    ' Based on code from ZD Net
+    
+    Dim hKeyOpen As Long ' Handle to the open reg key
+    Dim lKeyResult As Long ' Result of API
+    Dim lKeyQueryLen As Long ' Length of value
+    
+    ' Open the key
+    lKeyResult = RegOpenKeyEx(HKEY_LOCAL_MACHINE, _
+                 "Software\Microsoft\Windows\CurrentVersion\App Paths_
+                 \IEXPLORE.EXE" & Chr$(0), &H0, KEY_ALL_ACCESS, hKeyOpen)
+    ' Read the length of the subkey
+    lKeyResult = RegQueryValueEx(hKeyOpen, "Path", 0&, 0&, 0&, _
+                 lKeyQueryLen)
+    ' Test for success
+    If lKeyQueryLen > 0 Then
+        ' IE is installed
+        IsIEAvailable = True
+    Else
+        ' IE is not installed
+        IsIEAvailable = False
+    End If
+    ' Close handle to registry
+    RegCloseKey hKeyOpen
+    
+End Function
+'-- End --'
+
+
+To use the code add this line where you want to test if IE is installed:
+
+   If IsIEAvailable Then
+      Msgbox "IE is installed"
+   Else
+      Msgbox "IE is not installed"
+   End If
+.. And you will now know if IE is installed on the machine that your app is running on. This is handy when you fx. want to disable hyperlinks or some other Internet related item.
+
+

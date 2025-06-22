@@ -1,0 +1,138 @@
+'Author: bader
+'Author's email: badr-m@mail.com
+'Date Submitted: 8/1/2000
+'Compatibility: VB 6,VB 5,VB 4/32
+
+'Task: Adding AutoComplete to a VB Text Box
+
+'Declarations
+none
+
+'Code:
+'Add a label (Label1), and text box (Text1) and a command button (Command1) to
+'a form, and add the following:
+
+
+Option Explicit
+
+'Flags to control the operation of SHAutoComplete.
+'The first four are used to override the Internet
+'Explorer registry settings. The user can change
+'these settings manually by launching the Internet
+'Options property sheet from the Tools menu and
+'clicking the Advanced tab.The last five can be
+'used to specify which files or URLs will be
+'available for autoappend or autosuggest operations.
+
+'Ignore registry default and force feature on
+Private Const SHACF_AUTOSUGGEST_FORCE_ON  As Long = &H10000000
+
+'Ignore registry default and force feature off.
+Private Const SHACF_AUTOSUGGEST_FORCE_OFF  As Long = &H20000000
+
+'Ignore registry default and force feature on. (Also know as AutoComplete)
+Private Const SHACF_AUTOAPPEND_FORCE_ON  As Long = &H40000000
+
+'Ignore registry default and force feature off. (Also know as AutoComplete)
+Private Const SHACF_AUTOAPPEND_FORCE_OFF  As Long = &H80000000
+
+'Currently (SHACF_FILESYSTEM | SHACF_URLALL)
+Private Const SHACF_DEFAULT  As Long = &H0
+
+'Includes the File System as well as the rest
+'of the shell (Desktop\My Computer\Control Panel\)
+Private Const SHACF_FILESYSTEM  As Long = &H1
+
+'URLs in the User's History
+Private Const SHACF_URLHISTORY  As Long = &H2
+
+'URLs in the User's Recently Used list
+Private Const SHACF_URLMRU  As Long = &H4
+
+Private Const SHACF_URLALL  As Long = (SHACF_URLHISTORY Or SHACF_URLMRU)
+
+'Identifies the platform for which the DLL was built.
+Private Const DLLVER_PLATFORM_WINDOWS As Long = &H1  'Windows 95
+Private Const DLLVER_PLATFORM_NT As Long = &H2       'Windows NT
+
+Private Type DllVersionInfo
+   cbSize As Long
+   dwMajorVersion As Long
+   dwMinorVersion As Long
+   dwBuildNumber As Long
+   dwPlatformID As Long
+End Type
+
+Private Declare Function SHAutoComplete _
+   Lib "Shlwapi.dll" _
+  (ByVal hwndEdit As Long, _
+   ByVal dwFlags As Long) As Long
+
+Private Declare Function DllGetVersion _
+   Lib "Shlwapi.dll" _
+  (dwVersion As DllVersionInfo) As Long
+
+
+Private Function GetIEVersion(DVI As DllVersionInfo) As Long
+
+   DVI.cbSize = Len(DVI)
+   Call DllGetVersion(DVI)
+
+   GetIEVersion = DVI.dwMajorVersion
+
+End Function
+
+
+Private Function GetIEVersionString() As String
+
+   Dim DVI As DllVersionInfo
+
+   DVI.cbSize = Len(DVI)
+   Call DllGetVersion(DVI)
+
+   GetIEVersionString = "Internet Explorer " & _
+                        DVI.dwMajorVersion & "." & _
+                        DVI.dwMinorVersion & "." & _
+                        DVI.dwBuildNumber
+
+End Function
+
+
+Private Sub Command1_Click()
+
+   Dim DVI As DllVersionInfo
+
+   If GetIEVersion(DVI) >= 5 Then
+
+     'Turn on auto-complete
+      Call SHAutoComplete(Text1.hWnd, SHACF_DEFAULT)
+
+     'update the captions and set focus to the textbox
+      Command1.Caption = "SHAutoComplete is On"
+      Command1.Enabled = False
+      Text1.SetFocus
+      Text1.SelStart = Len(Text1.Text)
+
+   Else
+
+     'damn!
+      MsgBox "Sorry ... you need IE5 to use this demo", vbExclamation
+
+   End If
+
+End Sub
+
+
+Private Sub Form_Load()
+
+  'dim a DllVersionInfo type
+   Dim DVI As DllVersionInfo
+
+  'display the version of Shlwapi
+   Label1 = "Using Shlwapi.dll for " & GetIEVersionString
+
+  'if not 5 or greater, can't do it
+   Command1.Enabled = GetIEVersion(DVI) >= 5
+   Command1.Caption = "SHAutoComplete is Off"
+
+End Sub

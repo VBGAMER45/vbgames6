@@ -1,0 +1,4 @@
+'Launch Windows Add New Hardware wizard
+'Code
+Dim dblReturn As Double
+dblReturn = Shell("rundll32.exe shell32.dll,Control_RunDLL sysdm.cpl @1", 5)

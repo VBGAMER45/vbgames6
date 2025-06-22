@@ -1,0 +1,28 @@
+'Declarations
+Public Const SPI_GETWORKAREA = 48
+Declare Function SystemParametersInfo Lib "user32" Alias "SystemParametersInfoA" (ByVal uAction As Long, ByVal uParam As Long, lpvParam As Any, ByVal fuWinIni As Long) As Long
+
+Type RECT
+    Left   As Long
+    Top    As Long
+    Right  As Long
+    Bottom As Long
+End Type
+
+
+__________________________
+'Code
+
+
+Dim lngTop, lngLeft, lngRight, lngBottom As Long
+Dim typRect As RECT
+
+' Retrieve the Windows working area (i.e. the portion of
+' the screen not obscured by the taskbar or other application bars).
+Call SystemParametersInfo(SPI_GETWORKAREA, vbNull, typRect, 0)
+With typRect
+    lngTop = .Top
+    lngLeft = .Left
+    lngRight = .Right
+    lngBottom = .Bottom
+End With
