@@ -1,0 +1,44 @@
+Author: Abstractvb
+Date: 8/20/2000 5:30:48 PM
+ID: 159
+
+
+Explains how to create cookies in a VB app using the InternetSetCookie and InternetGetCookie API`s in WININET.DLL.
+
+Start with a new project and a single form. Add two Command buttons to the form: cmdMakeCookie and cmdGetCookie. Drop in this code and then try it out. 
+
+
+Private Declare Function InternetSetCookie Lib "wininet.dll" _
+        Alias "InternetSetCookieA" _
+        (ByVal lpszUrlName As String, _
+        ByVal lpszCookieName As String, _
+        ByVal lpszCookieData As String) As Boolean
+
+Private Declare Function InternetGetCookie Lib "wininet.dll" _
+        Alias "InternetGetCookieA" _
+        (ByVal lpszUrlName As String, _
+        ByVal lpszCookieName As String, _
+        ByVal lpszCookieData As String, _
+        lpdwSize As Long) As Boolean
+
+Private Sub cmdMakeCookie_Click()
+  Dim blnReturn As Boolean
+  
+  blnReturn = InternetSetCookie("http://abstractvb.com/MyCookie.htm", _
+                "MyCookiesName", "Put Cookie Information Here")
+  
+  If Not blnReturn Then MsgBox "Make Cookie Operation Failed!", vbCritical
+End Sub
+
+Private Sub cmdGetCookie_Click()
+   Dim strCookieText As String * 256
+   Dim blnReturn As Boolean
+   
+   blnReturn = InternetGetCookie("http://abstractvb.com/MyCookie.htm", _
+                  "MyCookiesName", strCookieText, 255)
+   If Not blnReturn Then
+     MsgBox "Get Cookie Operation Failed", vbCritical
+   Else
+     MsgBox strCookieText, vbInformation
+   End If
+End Sub

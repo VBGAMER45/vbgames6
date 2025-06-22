@@ -1,0 +1,42 @@
+'----------------------------------'Align the form with Visible Taskbar
+'----------------------------------'From Kosta Gounda
+'Ptolemeon 23 Kozani, TK 50100, GREECE'EMail : mentor@freemail.gr
+'Copyright (c) 2000. All rights Reserved.
+'----------------------------------'Function Name : AlignForm
+'        Usage : AlignForm(FormName,Position)
+'     FormName : The Name of the form you want to Align.
+'     Position : Optional , Empty or 0 for Center
+'----------------------------------Private Const SPI_GETWORKAREA = 48
+Private Declare Function SystemParametersInfo& Lib "user32" Alias
+"SystemParametersInfoA" (ByVal uAction As Long, ByVal uParam As Long, lpvParam
+As Any, ByVal fuWinIni As Long)Type RECT    Left        As Long
+    Top         As Long    Right       As Long    Bottom      As LongEnd Type
+Public Enum FormPosition   wsTopLeft = 1   wsTopMiddle = 2   wsTopRight = 3
+   wsCenterLeft = 4   wsCenterMiddle = 5   wsCenterRight = 6   wsBottomLeft = 7
+   wsBottomMiddle = 8   wsBottomRight = 9End Enum
+'----------------------------------Public Function AlignForm(frm As Form,
+Optional WhereTS As FormPosition)
+Dim ScreenWidth&, ScreenHeight&, ScreenLeft&, ScreenTop&Dim DesktopArea As RECT
+'Getting the System Metrics
+Call SystemParametersInfo(SPI_GETWORKAREA, 0, DesktopArea, 0)
+ScreenHeight = (DesktopArea.Bottom - DesktopArea.Top) * Screen.TwipsPerPixelY
+ScreenWidth = (DesktopArea.Right - DesktopArea.Left) * Screen.TwipsPerPixelX
+ScreenLeft = DesktopArea.Left * Screen.TwipsPerPixelX
+ScreenTop = DesktopArea.Top * Screen.TwipsPerPixelY'Moving the Form
+Select Case Val(whereTS)	Case 1 'TopLeft		frm.Move ScreenLeft, ScreenTop
+	Case 2 'TopMid		frm.Move (ScreenWidth - frm.Width) \ 2 + ScreenLeft, ScreenTop
+	Case 3 'TopRight		frm.Move ScreenWidth - frm.Width, ScreenTop
+	Case 4 'CenterLeft
+		frm.Move ScreenLeft, (ScreenHeight - frm.Height) \ 2 + ScreenTop
+	Case 5 'CenterMid
+		frm.Move (ScreenWidth - frm.Width) \ 2 + ScreenLeft, (ScreenHeight -
+frm.Height) \ 2 + ScreenTop	Case 6 'CenterRight
+		frm.Move ScreenWidth - frm.Width, (ScreenHeight - frm.Height) \ 2 + ScreenTop
+	Case 7 'BottomLeft		frm.Move ScreenLeft, ScreenHeight - frm.Height
+	Case 8 'BottomMid
+		frm.Move (ScreenWidth - frm.Width) \ 2 + ScreenLeft, ScreenHeight - frm.Height
+	Case 9 'BottomRight
+		frm.Move ScreenWidth - frm.Width, ScreenHeight - frm.Height
+	Case Else 'CenterMid
+		frm.Move (ScreenWidth - frm.Width) \ 2 + ScreenLeft, (ScreenHeight -
+frm.Height) \ 2 + ScreenTopEnd SelectEnd Function

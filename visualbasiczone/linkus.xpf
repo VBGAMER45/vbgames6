@@ -1,0 +1,34 @@
+<Page footerSelection="1" lastUpdated="Wed Feb 02 15:51:52 CST 2011" fileVersion="2" dirty="" lastSave="1296683512254" lastPublish="1296683856711" showingTemplate="false" lastMod="1296683511088" unsaved="false">
+  <Element filename="linkus" width="650" onload="" description="" currentWindow="1" keyword="" uidCounter="11" imageToolbarOff="true" title="Link To Us!" onPublish="PageElement" backgroundType="bgColor" copyrightFooterStyle="Select A Style" bgImage="" type="Page" pagePassword="" uniqueID="element1" center="false" onunload="" bgColor="#000000" bgPattern="" headTag="" pageURI="http://VisualBasiczone.homestead.com/linkus.html" passwordProtectedFile="" followedLinkColor="#6633CC" linkColor="#3333CC">
+    <Element originalSource="" isImageType="true" src="files/103.gif" imageRatio="4.211009" y="265" maintainProportion="true" x="191" offsetX="0.0" onPreview="ImportedImage" uniqueID="element2" width="459" sizePositionLocked="false" offsetY="0.0" link="" alt="" bucketRatio="4.211009" WOHratio="4.2110091743119265" editable="true" onPublish="ImportedImage" height="109" zoom="1.0" name="Imported Image#1" link_target="" type="ImportedImage" groupID="" fileType="IMAGEFILTER"/>
+<?property ignore-whitespace="false"?><Element sizePositionLocked="false" bgcolor="" uniqueID="element3" width="344" padding="0" type="Text" border-color="#000000" name="Text#1" editable="true" groupID="" y="196" x="274" height="71" border-width="0"><Paragraph style="none" align="left" indent="0"><Segment color="#FF0033" font-style="bold" underline="false" font-family="Helvetica" href="" font-size="36" link_target="">Link to US!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element color="#000000" bthickness="4" italic="false" textSize="16" alt="Home" name="Standard Button#1" height="41" onPreview="StandardButton" width="78" sizePositionLocked="false" buttonLabel="Home" uniqueID="element4" y="563" groupID="" link="http://www.visualbasiczone.com" x="368" textColor="#FF0033" textFont="Helvetica" onPublish="StandardButton" bold="true" bevel="24" type="StandardButton" textHeight="12" link_target="_self"/>
+<?property ignore-whitespace="false"?><Element sizePositionLocked="false" bgcolor="" uniqueID="element5" width="344" padding="0" type="Text" border-color="#000000" name="Text#2" editable="true" groupID="" y="392" x="268" height="30" border-width="0"><Paragraph style="none" align="left" indent="0"><Segment color="#FF0033" font-style="bold" underline="false" font-family="Helvetica" href="" font-size="10" link_target="">You can link to us by using this picture above!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element uniqueID="element6" sizePositionLocked="false" width="220" name="Insert HTML#1" groupID="" height="32" cdata="" y="6" x="0" type="HTMLSnippet">
+      <![CDATA[<SCRIPT language=JavaScript 
+src="files/toolbar.js"></SCRIPT>
+
+
+<SCRIPT language=JavaScript 
+src="files/local.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+			drawToolbar();
+		</SCRIPT>
+
+
+<SCRIPT language=JavaScript 
+src="files/global.js"></SCRIPT>]]>
+    </Element>
+<?property ignore-whitespace="false"?><Element sizePositionLocked="false" bgcolor="" uniqueID="element7" width="444" padding="0" type="Text" border-color="#000000" name="Text#3" editable="true" groupID="" y="6" x="17" height="71" border-width="0"><Paragraph style="none" align="center" indent="0"><Segment color="#FF0033" font-style="bold" underline="false" font-family="Helvetica" href="" font-size="36" link_target="">Visual Basic Zone</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element sizePositionLocked="false" bgcolor="" uniqueID="element8" width="364" padding="0" type="Text" border-color="#000000" name="Text#4" editable="true" groupID="" y="464" x="247" height="94" border-width="0"><Paragraph style="none" align="left" indent="0"><Segment color="#FF0033" font-style="bold" underline="false" font-family="Helvetica" href="" font-size="10" link_target="">&#160; &#160; &#160;&lt;a href=&quot;http://www.visualbasiczone.com&quot;&gt;</Segment></Paragraph><Paragraph style="none" align="left" indent="0"><Segment color="#FF0033" font-style="bold" underline="false" font-family="Helvetica" href="" font-size="10" link_target="">&#160; &#160; &#160;&lt;img &#160; &#160; &#160;src=&quot;http://www.visualbasiczonehomestead/files/103.gif&quot; &#160;alt=&quot;VisualBasicZone&quot; border=&quot;0&quot; target=&quot;_blank&quot;&gt;</Segment></Paragraph><Paragraph style="none" align="left" indent="0"><Segment color="#FF0033" font-style="bold" underline="false" font-family="Helvetica" href="" font-size="10" link_target="">&#160; &#160; &#160;&lt;/a&gt;&#160;</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element sizePositionLocked="false" bgcolor="" uniqueID="element9" width="344" padding="0" type="Text" border-color="#000000" name="Text#5" editable="true" groupID="" y="426" x="250" height="35" border-width="0"><Paragraph style="none" align="center" indent="0"><Segment color="#FF0033" font-style="bold" underline="false" font-family="Helvetica" href="" font-size="14" link_target="">Here is the code below</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+  </Element>
+  <Version>
+    <Current site="6432415" fileVersion="13" user="127711"/>
+    <Initial site="6432415" fileVersion="13" user="127711"/>
+  </Version>
+  <HeadTag>
+    <![CDATA[]]>
+  </HeadTag>
+</Page>

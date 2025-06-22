@@ -1,0 +1,30 @@
+<Page footerSelection="1" lastUpdated="Wed Feb 02 15:50:25 CST 2011" fileVersion="2" dirty="" lastSave="1296683425149" lastPublish="1296683786835" showingTemplate="false" lastMod="1296683424080" unsaved="false">
+  <Element bgImage="" filename="index" linkColor="#3333CC" bgColor="#000000" title="VisualBasiczone" passwordProtectedFile="" followedLinkColor="#6633CC" description="" copyrightFooterStyle="Select A Style" headTag="" backgroundType="bgColor" uniqueID="element1" width="650" onload="" onunload="" keyword="" uidCounter="6" pagePassword="" center="false" onPublish="PageElement" currentWindow="1" bgPattern="ibog:/Backgrounds#algae.gif" changed="@bgPattern,@changed," imageToolbarOff="true" type="Page" pageURI="http://VisualBasiczone.homestead.com/index.html">
+<?property ignore-whitespace="false"?><Element sizePositionLocked="false" bgcolor="" uniqueID="element2" width="445" padding="0" type="Text" border-color="#000000" name="Text#1" editable="true" groupID="" y="175" x="121" height="70" border-width="0"><Paragraph style="none" align="left" indent="0"><Segment color="#000000" font-style="plain" underline="" font-family="Helvetica" href="" font-size="10pt" link_target="">V</Segment><Segment color="#FF0033" font-style="bold" underline="false" font-family="Helvetica" href="" font-size="36" link_target="">Visual Basic Zone!</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+<?property ignore-whitespace="false"?><Element sizePositionLocked="false" bgcolor="" uniqueID="element3" width="344" padding="0" type="Text" border-color="#000000" name="Text#2" editable="true" groupID="" y="260" x="251" height="35" border-width="0"><Paragraph style="none" align="left" indent="0"><Segment color="#FF0033" font-style="bold" underline="false" font-family="Helvetica" href="http://www.visualbasiczone.com" font-size="14" link_target="_self">Enter My Site</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element uniqueID="element4" sizePositionLocked="false" width="220" name="Insert HTML#1" groupID="" height="32" cdata="" y="6" x="0" type="HTMLSnippet">
+      <![CDATA[<SCRIPT language=JavaScript 
+src="files/toolbar.js"></SCRIPT>
+
+
+<SCRIPT language=JavaScript 
+src="files/local.js"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+			drawToolbar();
+		</SCRIPT>
+
+
+<SCRIPT language=JavaScript 
+src="files/global.js"></SCRIPT>]]>
+    </Element>
+<?property ignore-whitespace="false"?><Element sizePositionLocked="false" bgcolor="" uniqueID="element5" width="444" padding="0" type="Text" border-color="#000000" name="Text#3" editable="true" groupID="" y="6" x="17" height="70" border-width="0"><Paragraph style="none" align="center" indent="0"><Segment color="#FF0033" font-style="bold" underline="false" font-family="Helvetica" href="" font-size="36" link_target="">Visual Basic Zone</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+  </Element>
+  <Version>
+    <Current site="6432415" fileVersion="13" user="127711"/>
+    <Initial site="6432415" fileVersion="13" user="127711"/>
+  </Version>
+  <HeadTag>
+    <![CDATA[]]>
+  </HeadTag>
+</Page>

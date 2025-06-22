@@ -1,0 +1,80 @@
+Please make sure you enter your url to your midi files. Currently it says: 
+
+location.href='http://www.A1javascripts.com/midi'+x+'.mid'
+
+Change this to your own and name your files midi1.mid, midi2.mid, etc.
+Oh, and remember to rename "Songname # 1", etc to your song names, and that's it.
+
+3 parts to this 3 Script
+========================================================
+part 1
+========================================================
+<Script Language="JavaScript">
+
+<!-- Hiding 
+/*  Rescued by A1 javascripts from pieces on a site resulting in errors and restored to excellent working condition - although not quite original anymore, all credit to the script maker Lefteris Haritou. http://www.geocities.com/~lef
+    Please keep the above credit.
+    No copyrights but be fair.
+*/
+
+song = new Array()
+var x = 0
+
+song[1] = "   Songname # 1"
+song[2] = "   Songname # 2"
+song[3] = "   Songname # 3"
+song[4] = "   Songname # 4"
+song[5] = "   Songname # 5"
+song[6] = "   Songname # 6"
+
+function prev(){
+if (x>1)
+{ x--
+document.midi.typein.value=song [x]
+}
+}
+
+function next(){
+var max= song.length-1
+if (x<max)
+{ x++
+document.midi.typein.value=song [x]
+}
+}
+
+function go(){
+if (x != 0){
+location.href='http://www.A1javascripts.com/midi'+x+'.mid'
+}
+}
+
+function start(){
+x=1
+document.midi.typein.value=song [x]
+}
+
+function end(){
+x=song.length-1
+document.midi.typein.value=song [x]
+}
+
+function cls(){
+document.midi.typein.value="  Select A Midi Song"
+}
+// Done Hiding -->
+
+</Script>
+=====================================================
+part 2
+=====================================================
+<!-- this script and more located at A1javascripts.com -->
+<FORM Name="midi">
+<INPUT NAME="typein" TYPE="text" SIZE="25" ALIGN=top><BR><!-- You can change the size of the textbox if you need-->
+<font size=2 face="Helvetica">
+<INPUT TYPE=Button Value="|<<" Align=center onclick="start()"><INPUT TYPE=Button Value="<<" Align=center onclick="prev()"><INPUT TYPE=Button Value="PLAY" Align=center onclick="go()"><INPUT TYPE=Button Value=">>" Align=center onclick="next()"><INPUT TYPE=Button Value=">>|" Align=center onclick="end()"></FORM></font>
+<!-- -->
+=======================================================
+part 3
+========================================================
+<!-- --><body onload="cls()"><!-- -->
+

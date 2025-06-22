@@ -1,0 +1,9 @@
+Private Declare Function SHRunDialog Lib "shell32" Alias "#61" (ByVal hwnd As Long, ByVal I_dont_know_1 As Long, ByVal I_dont_know_2 As Long, ByVal dTitle As String, ByVal dPrompt As String, ByVal uFlags As Long) As Long
+
+Private Sub Form_Load()
+'No Browse Button.Need to enter the program path manually
+'SHRunDialog hWnd, 0, 0, "This is Run dialog", "Please enter the program you wish to run ", 1
+'Normal Run Dialog
+SHRunDialog hWnd, 0, 0, "This is Run dialog", "Please enter the program you wish to run ", 2
+End
+End Sub

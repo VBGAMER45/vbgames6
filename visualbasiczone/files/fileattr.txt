@@ -1,0 +1,48 @@
+'Compatibility: VB 6,VB 5
+
+'Task: Get File Attributes using GetFileAttributes API
+
+'Declarations
+Const READONLY = &H1
+Const HIDDEN = &H2
+Const SYSTEM = &H4
+Const DIRECTORY = &H10
+Const ARCHIVE = &H20
+Const NORMAL = &H80
+Const COMPRESSED = &H800
+Private Declare Function GetFileAttributes Lib "kernel32.dll" Alias
+"GetFileAttributesA" (ByVal lpFileName As String) As Long
+
+
+'Code:
+Private Sub Form_Load()
+Dim val As String
+Dim attr As Long
+attr = GetFileAttributes("C:\karthik\waste.txt")
+If (attr And &H1) = &H1 Then
+val = " Read Only,"
+End If
+If (attr And &H2) = &H2 Then
+val = val & " Hidden,"
+End If
+If (attr And &H4) = &H4 Then
+val = val & " System,"
+End If
+If (attr And &H20) = &H20 Then
+val = val & " Archive,"
+End If
+If (attr And &H80) = &H80 Then
+val = val & " Normal,"
+End If
+If (attr And &H800) = &H800 Then
+val = val & " Compressed,"
+End If
+val = Left(val, Len(val) - 1)
+If (attr And &H10) = &H10 Then
+MsgBox "Given directory has " & val & " attributes"
+Else
+MsgBox "Given file has " & val & " attributes"
+End If
+End
+End Sub
+

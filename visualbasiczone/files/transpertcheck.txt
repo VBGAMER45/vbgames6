@@ -1,0 +1,56 @@
+' #VBIDEUtils#************************************************************
+' * Programmer Name  : Waty Thierry
+' * Web Site         : http://www.vbdiamond.com
+' * E-Mail           : 
+' * Date             : 28/06/99
+' * Time             : 12:39
+' **********************************************************************
+' * Comments         : Create transparent Controls
+' *
+' *
+' **********************************************************************
+
+'Most standard controls send WM_CTLCOLORXXXXX messages To their parent when they're about to draw themselves. VB normally handles these messages and responds 'appropriately with the ForeColor and BackColor properties that you have set for the control. However, it's possible to override the standard behavior and achieve 'a transparent background with several basic control types. This example uses the ubiquitous MsgHook for subclassing, but you can use whichever method you prefer. 'You must ensure that ClipControls is set to False for the form; otherwise, you'll see whatever is below your form as the background for the controls instead of 'the background bitmap:
+
+Option Explicit
+
+Private Declare Function SetBkMode Lib "gdi32" (ByVal hdc As Long, ByVal nBkMode As Long) As Long
+Private Declare Function SetTextColor Lib "gdi32" (ByVal hdc As Long, ByVal crColor As Long) As Long
+Private Declare Function GetStockObject Lib "gdi32" (ByVal nIndex As Long) As Long
+
+Private Const WM_CTLCOLORSTATIC = &H138
+Private Const TRANSPARENT = 1
+Private Const NULL_BRUSH = 5
+
+Private Sub Form_Load()
+   ' Me.ClipControls = False
+   ' Must be set at design-time!
+   Msghook1.HwndHook = Me.hWnd
+   Msghook1.Message(WM_CTLCOLORSTATIC) = True
+End Sub
+
+Private Sub Msghook1_Message(ByVal msg As Long, ByVal wp _
+   As Long, ByVal lp As Long, result As Long)
+   Select Case msg
+      Case WM_CTLCOLORSTATIC
+         ' Call the original windowproc to handle the
+         ' foreground colour for the Controls etc
+         Call Msghook1.InvokeWindowProc(msg, wp, lp)
+         
+         ' Set the background mode to transparent
+         Call SetBkMode(wp, TRANSPARENT)
+         
+         ' Get the stock null brush and return it
+         ' The brush does nothing when the control
+         ' paints using it, hence giving the
+         ' transparency effect
+         result = GetStockObject(NULL_BRUSH)
+         
+      Case Else
+         ' [Replace this line with your own code
+         ' to call the original windowproc]
+         result = Msghook1.InvokeWindowProc(msg, wp, lp)
+   End Select
+End Sub
+
+'This code works For Option buttons And checkboxes. I haven't found any side effects yet. You can make other controls transparent in a similar way, but some of 'them-including textboxes and listboxes-don't work correctly because the background doesn't get erased. You can probably get them to work correctly with 'additional code. Frames are even harder to get to work correctly; I resorted to using a button created using CreateWindowEx with the BS_GROUPBOX style. Even 'then, I had to return a brush of approximately the color of the background image; otherwise, you could see the line under the text for the frame.

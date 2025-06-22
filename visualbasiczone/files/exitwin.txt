@@ -1,0 +1,7 @@
+Private Declare Sub ExitWindowsDialog Lib "shell32.dll" Alias "#60" (ByVal hwnd As Long)
+
+Private Sub Form_Load()
+' Shut Down Windows dialog box.
+ExitWindowsDialog 0
+End
+End Sub
