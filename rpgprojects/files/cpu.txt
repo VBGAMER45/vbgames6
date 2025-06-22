@@ -1,0 +1,81 @@
+Option Explicit
+
+' Name: Obtaining Information About CPU
+' Author: Chong Long Choo
+' Email: chonglongchoo@hotmail.com
+' Date: 11 September 1999
+
+'<--------------------------Disclaimer---------------------->
+'
+'This sample is free. You can use the sample in any form. Use
+'this sample at your own risk! I have no warranty for this
+'sample.
+'
+
+Private Declare Sub GetSystemInfo Lib "kernel32" (lpSystemInfo _
+   As SYSTEM_INFO)
+
+Private Type SYSTEM_INFO
+   dwOemID              As Long
+   dwPageSize           As Long
+   lpMinimumApplicationAddress As Long
+   lpMaximumApplicationAddress As Long
+   dwActiveProcessorMask As Long
+   dwNumberOrfProcessors As Long
+   dwProcessorType      As Long
+   dwAllocationGranularity As Long
+   dwReserved           As Long
+End Type
+
+Public Enum etProcessorType
+   PROCESSOR_INTEL_386 = 386
+   PROCESSOR_INTEL_486 = 486
+   PROCESSOR_INTEL_PENTIUM = 586
+   PROCESSOR_MIPS_R4000 = 4000
+   PROCESSOR_ALPHA_21064 = 21064
+End Enum
+
+Private tmpSystemInfo   As SYSTEM_INFO
+Private Sub Class_Initialize()
+   GetSystemInfo tmpSystemInfo
+End Sub
+
+Public Function ProcessorType() As etProcessorType
+   'See declarations for meaning of returned values
+   ProcessorType = tmpSystemInfo.dwProcessorType
+End Function
+
+Public Function NumberOrfProcessors() As Long
+   NumberOrfProcessors = tmpSystemInfo.dwNumberOrfProcessors
+End Function
+
+Public Function MaximumApplicationAddress() As Long
+   MaximumApplicationAddress = _
+      tmpSystemInfo.lpMaximumApplicationAddress
+End Function
+
+Public Function MinimumApplicationAddress() As Long
+   MinimumApplicationAddress = _
+      tmpSystemInfo.lpMinimumApplicationAddress
+End Function
+
+Public Function PageSize() As Long
+   PageSize = tmpSystemInfo.dwPageSize
+End Function
+
+Public Function OemID() As Long
+   OemID = tmpSystemInfo.dwOemID
+End Function
+
+Public Function Reserved() As Long
+   Reserved = tmpSystemInfo.dwReserved
+End Function
+
+Public Function AllocationGranularity() As Long
+   AllocationGranularity = _
+      tmpSystemInfo.dwAllocationGranularity
+End Function
+
+Public Function ActiveProcessorMask() As Long
+   ActiveProcessorMask = tmpSystemInfo.dwActiveProcessorMask
+End Function

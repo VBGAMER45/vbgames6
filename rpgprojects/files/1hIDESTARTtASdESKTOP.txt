@@ -1,0 +1,62 @@
+Private Declare Function ShowWindow Lib "user32.dll" (ByVal hWnd As Long, ByVal nCmdShow As Long) As Long 
+Private Declare Function FindWindow Lib "user32.dll" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long 
+Private Declare Function EnableWindow Lib "user32.dll" (ByVal hWnd As Long, ByVal fEnable As Long) As Long 
+Private Declare Function FindWindowEx Lib "user32" Alias "FindWindowExA" (ByVal hWnd1 As Long, ByVal hWnd2 As Long, ByVal lpsz1 As String, ByVal lpsz2 As String) As Long  
+Public Sub taskBar(Visible As Boolean) 
+Dim hWnd As Long 
+hWnd = FindWindow("Shell_TrayWnd", "") 
+If Visible Then 
+ShowWindow hWnd, 5 
+Else 
+ShowWindow hWnd, 0 
+End If 
+End Sub 
+Public Sub desktop(Visible As Boolean) 
+Dim hWnd As Long 
+hWnd = FindWindow("Progman", "Program Manager") 
+If Visible Then 
+ShowWindow hWnd, 5 
+Else 
+ShowWindow hWnd, 0 
+End If 
+End Sub 
+
+Public Sub button(Visible As Boolean) 
+Dim hWnd, dwnd As Long 
+hWnd = FindWindow("Shell_TrayWnd", "") 
+dwnd = FindWindowEx(hWnd, 0, "Button", vbNullString) 
+If Visible Then 
+ShowWindow dwnd, 5 
+Else 
+ShowWindow dwnd, 0 
+End If 
+End Sub 
+
+'Show the stuff checked 
+Private Sub Command1_Click() 
+If Check1.Value = 1 Then 
+taskBar (True) 
+End If 
+If Check2.Value = 1 Then 
+desktop (True) 
+End If 
+If Check3.Value = 1 Then 
+button (True) 
+End If 
+End Sub 
+
+'Hide the stuff checked 
+Private Sub Command2_Click() 
+If Check1.Value = 1 Then 
+taskBar (False) 
+End If 
+If Check2.Value = 1 Then 
+desktop (False) 
+End If 
+If Check3.Value = 1 Then 
+button (False) 
+End If 
+End Sub
+ 
+
+

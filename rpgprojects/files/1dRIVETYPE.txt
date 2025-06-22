@@ -1,0 +1,27 @@
+Private Declare Function GetDriveType Lib "kernel32.dll" Alias "GetDriveTypeA" (ByVal nDrive As String) As Long 
+Private Const DRIVE_UNKNOWN = 0 
+Private Const DRIVE_DOES_NOT_EXIST = 1 
+Private Const DRIVE_REMOVABLE = 2 
+Private Const DRIVE_FIXED = 3 
+Private Const DRIVE_REMOTE = 4 
+Private Const DRIVE_CDROM = 5 
+Private Const DRIVE_RAMDISK = 6 
+Private Sub Form_Load() 
+Select Case GetDriveType("C:\") 
+    Case DRIVE_UNKNOWN 
+        MsgBox "Type Unknown", vbExclamation 
+    Case DRIVE_DOES_NOT_EXIST 
+        MsgBox "Type Unknown", vbCritical 
+    Case DRIVE_REMOVABLE 
+        MsgBox "The disk can be removed from the drive", vbInformation 
+    Case DRIVE_FIXED 
+        MsgBox "The disk can not be removed from the drive", vbInformation 
+    Case DRIVE_REMOTE 
+        MsgBox "The drive is a remote (network) drive", vbInformation 
+    Case DRIVE_CDROM 
+        MsgBox "The drive is a CD-ROM drive", vbInformation 
+    Case DRIVE_RAMDISK 
+        MsgBox "The drive is a RAM disk", vbInformation 
+    End Select 
+End 
+End Sub 

@@ -1,0 +1,5 @@
+Private Declare Function ShellAbout Lib "shell32.dll" Alias "ShellAboutA" (ByVal hWnd As Long, ByVal szApp As String, ByVal szOtherStuff As String, ByVal hIcon As Long) As Long 
+Private Sub Form_Load() 
+ShellAbout hWnd, "jONATHAN VALENTIN ", "For More Details contact ME", hIcon 
+End 
+End Sub 

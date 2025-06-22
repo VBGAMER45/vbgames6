@@ -1,0 +1,14 @@
+Private Declare Function GetSystemMetrics Lib "user32.dll" (ByVal nIndex As Long) As Long 
+Private Sub Form_Load() 
+'Check booted manner 
+x = GetSystemMetrics(67) 
+Select Case x 
+Case 0 
+MsgBox "Normal Boot" 
+Case 1 
+MsgBox "Safe mode" 
+Case 2 
+MsgBox "Safe mode with Network" 
+End Select 
+End 
+End Sub 

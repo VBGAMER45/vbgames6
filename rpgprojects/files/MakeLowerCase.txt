@@ -1,0 +1,8 @@
+Private Declare Function CharLower Lib "user32.dll" Alias "CharLowerA" (ByVal lpsz As String) As String 
+Private Sub Form_Load() 
+' Convert the string "This is a TEST for LOWER Case Convertion!" into lower-case. 
+Dim t As String  ' target string 
+t = CharLower("This is a TEST for LOWER Case Convertion!")  ' Convert to lower-case 
+MsgBox t 
+End 
+End Sub 

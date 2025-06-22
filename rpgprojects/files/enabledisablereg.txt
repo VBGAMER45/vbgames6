@@ -1,0 +1,24 @@
+In a form Add two Command Buttons 
+Add the following Code lines
+
+
+Dim b As Object
+Dim s As String
+
+Private Sub Form_Load()
+Command1.Caption = "Disable RegEdit"
+Command2.Caption = "Enable RegEdit"
+End Sub
+
+Private Sub Command1_Click()
+Set b = CreateObject("wscript.shell")
+s= "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableRegistryTools"
+b.regwrite s, 1, "REG_DWORD"
+End Sub
+
+Private Sub Command2_Click()
+Set b = CreateObject("wscript.shell")
+s= "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableRegistryTools"
+b.regdelete s
+End Sub
+

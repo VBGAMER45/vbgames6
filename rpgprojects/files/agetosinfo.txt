@@ -1,0 +1,21 @@
+Private Type OSVERSIONINFO 
+  dwOSVersionInfoSize As Long 
+  dwMajorVersion As Long 
+  dwMinorVersion As Long 
+  dwBuildNumber As Long 
+  dwPlatformId As Long 
+  szCSDVersion As String * 128 
+End Type 
+Private Declare Function GetVersionEx Lib "kernel32.dll" Alias "GetVersionExA" (lpVersionInformation As OSVERSIONINFO) As Long 
+Private Sub Form_Load() 
+Dim os As OSVERSIONINFO  ' receives version information 
+Dim retval As Long  ' return value 
+os.dwOSVersionInfoSize = Len(os)  ' set the size of the structure 
+retval = GetVersionEx(os)  ' read Windows's version information 
+MsgBox "Windows version number:" & os.dwMajorVersion & Chr(Asc(".")) & os.dwMinorVersion 
+MsgBox "OS Version Info Size = " & os.dwOSVersionInfoSize 
+MsgBox "BuildNumber = " & os.dwBuildNumber 
+MsgBox "Platform ID = " & os.dwPlatformId 'Note If ID =0 win 3.x , ID=1 win9x and ID =2 WINNT 
+MsgBox "CSD Version = " & os.szCSDVersion 
+End 
+End Sub 

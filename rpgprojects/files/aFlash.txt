@@ -1,0 +1,14 @@
+Private Declare Function GetActiveWindow Lib "user32.dll" () As Long 
+Private Declare Function FlashWindow Lib "user32.dll" (ByVal hwnd As Long, ByVal bInvert As Long) As Long 
+Private Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As Long) 
+Private Sub Command1_Click() 
+Dim c As Integer 
+Dim hactive As Long ' handle for the active window 
+Dim retval As Long  ' return value 
+hactive = GetActiveWindow()  ' get the handle of active window 
+For c = 1 To 20  ' flash ten times 
+retval = FlashWindow(hactive, 1)  'Change the look of the window 
+Sleep 500  ' Delay the execution for 1/2 minute 
+Next c 
+retval = FlashWindow(hactive, 0)  ' Bring the window to normal look 
+End Sub 

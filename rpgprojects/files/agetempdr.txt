@@ -1,0 +1,7 @@
+Private Declare Function GetTempPath Lib "kernel32" Alias "GetTempPathA" (ByVal nBufferLength As Long, ByVal lpBuffer As String) As Long 
+Private Sub Form_Load() 
+Dim a As String * 256 
+GetTempPath 256, a 
+MsgBox Left(a, InStr(a, Chr(0)) - 1) 
+End 
+End Sub 

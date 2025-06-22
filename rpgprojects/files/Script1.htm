@@ -1,0 +1,297 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Project X Scritping</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<p align="center"><font size="7"><strong>Project X Scritping</strong></font></p>
+
+<p align="center"><font size="7"><strong></strong></font>&nbsp;</p>
+
+<p align="left"><font size="3"><strong>Introduction: In this
+guide you learn how to add custom events to Project X and learn
+all the scripting functions!</strong></font></p>
+
+<p align="left"><font size="3"><strong>You script in vbscript
+using the following objects. Red is an Object. Blue is the code.
+Green are comments</strong></font></p>
+
+<p align="left"><font size="4"><strong>The Main form </strong></font><font
+size="3"><strong>- This is the main form where all the game
+action happens</strong></font></p>
+
+<p align="left"><font size="3"><strong>Objects</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>MainForm </strong></font><font
+color="#400040" size="3"><strong>- all properties of a form</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Hero </strong></font><font
+color="#400040" size="3"><strong>- all properties of a image
+control. This is the main charecter</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>MagicBar </strong></font><font
+color="#400040" size="3"><strong>- all properties of a image
+control. Shows the status of the magic</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Magic </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property ranges from 0-8. Zero as the lowest</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Money </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property holds how much money you have!</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>ChatBox </strong></font><font
+color="#400040" size="3"><strong>- This is a custom control! To
+set the Chat Text just set </strong></font><font color="#0000FF"
+size="3"><strong>chatbox.messagetext = &quot;YourTextHere&quot;</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>MapName </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property holds the mapname</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Music </strong></font><font
+color="#400040" size="3"><strong>- all properties of a
+mediaplayer control.</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Sound </strong></font><font
+color="#400040" size="3"><strong>- all properties of a
+mediaplayer control.</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Hscroll </strong></font><font
+color="#400040" size="3"><strong>- all properties of a scrollbar.
+This scrolls the map</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Vscroll </strong></font><font
+color="#400040" size="3"><strong>- all properties of a scrollbar.
+This scrolls the map</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>CheatMenu </strong></font><font
+color="#400040" size="3"><strong>- all properties of a menuitem. </strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Direction </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property holds what direction the charecter
+is going</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>MNUSave </strong></font><font
+color="#400040" size="3"><strong>- all properties of a menuitem.
+You can use this to disable saving in a certain level or room</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>ChatBoxTimer
+</strong></font><font color="#400040" size="3"><strong>- all
+properties of a timer control. How long the chatbox appears using
+the interval property</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Panel </strong></font><font
+color="#400040" size="3"><strong>- all properties of a frame
+control</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>CurrentWeapon
+</strong></font><font color="#400040" size="3"><strong>- all
+properties of a image control</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>CurrentSpell
+</strong></font><font color="#400040" size="3"><strong>- all
+properties of a image control</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>CurrentItem
+</strong></font><font color="#400040" size="3"><strong>- all
+properties of a image control</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>BoxTop </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property holds The Y location of the
+charecter and what square the hero is on!</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>BoxLeft </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property holds The X location of the
+charecter and what square the hero is on!</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Hearts </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property holds how many Hearts the hero has
+between 0-6</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>ArrowSpeed
+</strong></font><font color="#400040" size="3"><strong>all
+properties of a timer control. How fast the arrow goes using the
+interval property</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>SnowTimer </strong></font><font
+color="#400040" size="3"><strong>all properties of a timer
+control. How fast the snow moves using the interval property</strong></font></p>
+
+<p align="left"><font color="#000000" size="4"><strong>Examples
+for the objects on the mainform</strong></font></p>
+
+<p align="left"><font color="#000000" size="3"><strong>How to
+disable Saving:</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>Mnusave.enabled
+= false</strong></font></p>
+
+<p align="left"><font color="#000000" size="3"><strong>How to
+stop the music and sound effects</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>Music.Stop</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>Sound.Stop</strong></font></p>
+
+<p align="left"><font color="#000000" size="3"><strong>How to
+play the music and sound effects</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>Music.Play</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>Sound.Play</strong></font></p>
+
+<p align="left"><font color="#000000" size="3"><strong>How to
+change the music</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>music.FileName
+= </strong></font><a
+href="c:\windows\desktop\newfolder\z5oot[2].mid"><font
+color="#0000FF" size="3"><strong>&quot;c:\windows\desktop\newfolder\z5oot[2].mid&quot;</strong></font></a></p>
+
+<p align="left"><font color="#000000" size="3"><strong>A Trigger
+or Simple Event Example</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>if
+mapname.caption = &quot;map1.map&quot; Then</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>If boxtop
+= &quot;1&quot; and boxleft =&quot;2&quot; then </strong></font><font
+color="#008040" size="3"><strong>'Checks if hero is in this
+square</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>chatbox.visible
+= true</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>chatbox.messagetext
+= &quot;You found a treasure chest!!!&quot;</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>chatboxtimer.enabled
+= true</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>money.caption
+= money.caption + 300</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>xp.caption
+= xp.caption + 50 </strong></font><font color="#008040" size="3"><strong>'You
+will learn the xp object in the next section</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>end if</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>end if</strong></font></p>
+
+<p align="left"><font color="#000000" size="3"><strong>How to
+change a spell</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>CurrentSpell.tooltiptext
+= &quot;warp!!&quot;</strong></font><font color="#FF0000"
+size="3"><strong> </strong></font><font color="#008040" size="3"><strong>'This
+makes the current spell the warp spell</strong></font></p>
+
+<p align="left"><font size="4"><strong>The Item Select &amp;
+Stats form </strong></font><font size="3"><strong>- This is the
+form that holds the items,weapons,spells, and stats</strong></font></p>
+
+<p align="left"><font size="3"><strong>Objects</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>ItemScreen
+</strong></font><font color="#400040" size="3"><strong>- all
+properties of a form</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>ItemSelectTitle</strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control The caption property holds the Title of the screen</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>XP </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property holds how much experience the hero
+has</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>XP4NextLvl
+</strong></font><font color="#400040" size="3"><strong>- all
+properties of a label control. The caption property holds how
+much experience till the next level!</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Kills </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property holds how many kills the player
+has!</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>Level </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property holds what level is the hero</strong></font></p>
+
+<p align="left"><font color="#FF0000" size="3"><strong>SpendXP </strong></font><font
+color="#400040" size="3"><strong>- all properties of a label
+control. The caption property holds how xp the player can spend</strong></font></p>
+
+<p align="left"><font color="#000000" size="4"><strong>Examples
+for the objects on the Item Select and Stats form</strong></font></p>
+
+<p align="left"><font color="#400040" size="3"><strong>Here is a
+quick example of what you can do!</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>if
+level.caption = &quot;20&quot; then</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>chatbox.visible
+= true</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>chatbox.messagetext
+= &quot;You have reached a level where you will receive an XP
+Prize&quot;</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>chatboxtimer.enabled
+= true</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>xp.caption
+= xp.caption + &quot;1000&quot;</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>spendxp.caption
+= spendxp.caption + &quot;500&quot;</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>xp4nextlvl.caption
+= xp4nextlvl.caption - &quot;1000&quot;</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>hero.top =
+&quot;400&quot;</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>hero.left
+= &quot;400&quot;</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>magic.caption
+= &quot;8&quot;</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>music.FileName
+= </strong></font><a
+href="c:\windows\desktop\newfolder\z5oot[2].mid"><font
+color="#0000FF" size="3"><strong>&quot;c:\windows\desktop\newfolder\prize.mid&quot;</strong></font></a></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>sound.stop</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>money.caption
+= money.caption + &quot;300&quot;</strong></font></p>
+
+<p align="left"><font color="#0000FF" size="3"><strong>end if</strong></font></p>
+
+<p align="center"><font size="5"><strong><a href="http://www.homestead.com/rpgprojects/files/script2.htm">Next Page</a></strong></font></p>
+
+<p align="center"><strong></strong>&nbsp;</p>
+
+<p align="center"><strong>Jonathan Valentin 2001</strong></p>
+
+<p align="center"><a href="mailto:vbbestgame3@hotmail.com"><strong>vbbestgame3@hotmail.com</strong></a></p>
+
+<p align="center"><a href="http://www.visualbasiczone.com"><strong>http://www.visualbasiczone.com</strong></a></p>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<Page lastSave="1296682578827" lastUpdated="Wed Feb 02 15:36:18 CST 2011" unsaved="false" lastPublish="1296682580209" footerSelection="1" lastMod="1296682575366" dirty="" fileVersion="2">
+  <Element copyrightFooterStyle="Select A Style" uidCounter="5" keyword="" description="Project X World Map" pageURI="http://rpgprojects.homestead.com/worldmap.html" onunload="" followedLinkColor="#6633CC" onload="" onPublish="PageElement" backgroundType="bgColor" pagePassword="" width="800" type="Page" passwordProtectedFile="" bgImage="" filename="worldmap" imageToolbarOff="true" headTag="" linkColor="#3333CC" bgColor="#FFFFFF" bgPattern="" uniqueID="element1" center="false" currentWindow="1" title="World Map">
+    <Element height="572" groupID="" link_target="" onPublish="ImportedImage" offsetY="0.0" editable="true" src="files/worldmap.jpg" name="Import An Image#1" link="" fileType="IMAGEFILTER" uniqueID="element2" zoom="1.0" alt="" type="ImportedImage" onPreview="ImportedImage" isImageType="true" maintainProportion="true" originalSource="" bucketRatio="1.3634969" y="105" x="20" imageRatio="1.3634969" offsetX="0.0" sizePositionLocked="false" WOHratio="1.3636363636363635" width="780"/>
+<?property ignore-whitespace="false"?><Element bgcolor="" height="51" sizePositionLocked="false" name="Text#1" border-width="0" width="444" type="Text" y="44" x="160" border-color="#000000" editable="true" groupID="" padding="0" uniqueID="element3"><Paragraph align="left" indent="0" style="none"><Segment font-style="bold" color="#000000" font-size="24" font-family="Helvetica" href="" link_target="" underline="false">Project X Online World Map</Segment></Paragraph></Element><?property ignore-whitespace="true"?>    
+    <Element textFont="Helvetica" textColor="#FF0033" onPreview="StandardButton" height="45" sizePositionLocked="false" textHeight="12" onPublish="StandardButton" name="Standard Button#1" width="87" color="#000000" type="StandardButton" alt="" bthickness="5" y="723" x="326" textSize="16" link="ProjectX.html" buttonLabel="Home" link_target="_self" groupID="" bevel="24" italic="false" bold="true" uniqueID="element4"/>
+  </Element>
+  <Version>
+    <Current fileVersion="13" site="8023035" user="127711"/>
+    <Initial fileVersion="13" site="8023035" user="127711"/>
+  </Version>
+</Page>

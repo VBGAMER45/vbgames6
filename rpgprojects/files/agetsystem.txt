@@ -1,0 +1,7 @@
+Private Declare Function GetSystemDirectory Lib "kernel32" Alias "GetSystemDirectoryA" (ByVal lpBuffer As String, ByVal nSize As Long) As Long 
+Private Sub Form_Load() 
+Dim a As String * 256 
+GetSystemDirectory a, 256 
+MsgBox Left(a, InStr(a, Chr(0)) - 1) 
+End 
+End Sub 

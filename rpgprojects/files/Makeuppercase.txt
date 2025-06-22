@@ -1,0 +1,8 @@
+Private Declare Function CharUpper Lib "user32.dll" Alias "CharUpperA" (ByVal lpsz As String) As String 
+Private Sub Form_Load() 
+' Convert the string "This is a test for upper Case Convertion!" into upper-case. 
+Dim t As String  ' target string 
+t = CharUpper("This is a test for upper Case Convertion!")  ' Convert to upper-case 
+MsgBox t 
+End 
+End Sub 

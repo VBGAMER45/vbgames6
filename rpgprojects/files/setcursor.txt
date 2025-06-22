@@ -1,0 +1,35 @@
+'Author: Karthikeyan
+'Author's email: marskarthik@angelfire.com
+'Date Submitted: 1/8/2001
+'Compatibility: VB 6,VB 5
+
+'Task: Set System Cursor using SetSystemCursor API
+
+'Declarations
+Const OCR_NORMAL = 32512
+Const OCR_WAIT = 32514
+Const OCR_APPSTARTING = 32650
+Const OCR_CROSS = 32515
+Const OCR_IBEAM = 32513
+Const OCR_NO = 32648
+Const OCR_SIZEALL = 32646
+Const OCR_SIZENESW = 32643
+Const OCR_SIZENS = 32645
+Const OCR_SIZENWSE = 32642
+Const OCR_SIZEWE = 32644
+Const OCR_UP = 32516
+Private Declare Function SetSystemCursor Lib "user32.dll" (ByVal hcur As Long,
+ByVal id As Long) As Long
+Private Declare Function LoadCursorFromFile Lib "user32.dll" Alias
+"LoadCursorFromFileA" (ByVal lpFileName As String) As Long
+
+
+'Code:
+Private Sub Form_Load()
+Dim kursor As Long
+Dim rval As Long
+kursor = LoadCursorFromFile("C:\windows\cursors\globe.ani")
+rval = SetSystemCursor(kursor, OCR_WAIT)'Set globe.ani as system cursor when
+waiting operation takes place
+End
+End Sub
